@@ -70,8 +70,23 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 Claude dit: [TextBlock(text='Bonjour !', type='text')]
 ```
 
-2. Nous avons pas à pas créé tout les éléments préalables à la création de la première diapositive de la vidéo:
-   - Création du texte et de l'image à intégrer dans le HTML
-   - Création du voice over sous forme texte puis parlé,
-   - Intégration de tous ces éléments dans une vidéo
-   - Nous n'avons pas écrit les codes correspondants mais sonnet 3.5 les a construits et débuggés au fil de notre [dialogue](https://claude.ai/chat/c33dece9-e5ab-4206-98c6-de644cb1d731)  
+2. [**Création d'une vidéo à partir d'un texte**](https://claude.ai/chat/c33dece9-e5ab-4206-98c6-de644cb1d731)  
+- Ce projet automatise la création de vidéos éducatives à partir de contenu textuel, utilisant diverses technologies et APIs. Le processus se déroule en plusieurs étapes intégrées dans un script Python unique :
+  - Conversion du texte :
+    - Lit le contenu du fichier PLACE_HOLDER_TEXTE_VIDEO.txt.
+    - Utilise l'API Claude d'Anthropic pour convertir le texte en structure JSON de diapositives.
+  - Traitement des diapositives :
+    - Génère un fichier HTML structuré avec CSS intégré pour chaque diapositive.
+    - Crée un texte de voix off avec Claude.
+    - Produit une image illustrative via l'API DALL-E d'OpenAI.
+    - Génère un fichier audio de la voix off avec l'API Text-to-Speech d'OpenAI.
+  - Création des vidéos :
+    - Capture une image du HTML rendu avec Selenium.
+    - Combine l'image et l'audio en utilisant MoviePy pour chaque diapositive.
+  - Agrégation finale :
+    - Assemble toutes les vidéos individuelles en une seule vidéo.
+    - Ajoute des transitions entre les diapositives.
+
+
+
+Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
