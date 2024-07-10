@@ -99,7 +99,9 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
 - On crée le répertoire ```coding_assistant``` et on lance ```conda activate teambot```
 - On suit les [instructions d'installation](https://github.com/paul-gauthier/aider) 
 - Mais il faut l'adapter au terminal powershell :```$env:ANTHROPIC_API_KEY="sk... "```
-- AIDER répond à nos directives et adapte en conséquence un repository qui a été cloné localement. Cela nous a permi
+- AIDER répond à nos directives et adapte en conséquence un repository qui a été cloné localement.
+- Il conserve un logbook des actions entreprises (```.aider.chat.history.md```) et un LLM comme Sonnet 3.5 ou GPT-4o peut alors en faire la synthèse:
+  ```J'ai eu des problèmes qui ont été résolu dans le document joint, fais en la synthèse```
 
 5. [**Text to image local dans docker**](
 - Il faut "alimenter" comfyui en y rajoutant les chkpoints requis à placer dans le répertoire : ```C:\Users\test\Documents\AI_Automation\coding_assistant\comfyui\storage\ComfyUI\models\checkpoints```
