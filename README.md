@@ -91,13 +91,25 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
 
 3. **Point d'étape:**
 - Nous avons réussi à mettre en oeuvre une applicatoin complexe sans coder une seule ligne. Cependant ce faisant nous avons détecté des pistes pour augmenter encore notre productivité
-  - **Automatiser les itérations de débuggage** , ce qui nous a fait perdre le plus de temps dans la mise au point du code  
-  - Faire du web scraping pour voir si notre problème n'est pas déjà résolu par ailleurs
+  - **Automatiser les itérations de débuggage** , ce qui nous a fait perdre le plus de temps dans la mise au point du code
   - Passer à l'open source, en particulier pour la création d'image qui constitue le poste de dépense le plus élevé pour la création d'une vidéo
+  - Faire du web scraping pour voir si notre problème n'est pas déjà résolu par ailleurs
  
 4. **Coding assistant: AIDER+Sonnet**
 - On crée le répertoire ```coding_assistant``` et on lance ```conda activate teambot```
 - On suit les [instructions d'installation](https://github.com/paul-gauthier/aider) 
-- mais il faut l'adapter au termial powershell :```$env:ANTHROPIC_API_KEY="sk... "```
-- Nous allons testé le potentiel d'AIDER en intallant le générateur d'image [Comfyui](https://github.com/comfyanonymous/ComfyUI) dans un container docker 
-  - AIDER créé les fichiers adhoc et nous demande de lancer ```docker-compose up --build```ce que nous faisons dans un autre terminal.
+- Mais il faut l'adapter au terminal powershell :```$env:ANTHROPIC_API_KEY="sk... "```
+- AIDER répond à nos directives et adapte en conséquence un repository qui a été cloné localement. Cela nous a permi
+
+5. [**Text to image local dans docker**](
+- Il faut "alimenter" comfyui en y rajoutant les chkpoints requis à placer dans le répertoire : ```C:\Users\test\Documents\AI_Automation\coding_assistant\comfyui\storage\ComfyUI\models\checkpoints```
+- Il n'y a pas de consensus clair sur un seul « meilleur » point de contrôle pour ComfyUI, car cela dépend beaucoup de vos préférences personnelles et du type d'image que l'on souhaite générer. Cependant, plusieurs points de contrôle sont fréquemment recommandés pour leur qualité :
+  - SDXL (Stable Diffusion XL) : C'est un modèle de base très performant, particulièrement bon pour le réalisme et la qualité générale des images.
+  - Juggernaut XL : Souvent cité comme l'un des meilleurs pour le photoréalisme
+  - Dreamshaper : Apprécié pour sa polyvalence et sa qualité, particulièrement dans sa version Turbo
+  - Vision réaliste : Excellent pour générer des humains réalistes.
+  - RealVis XL : Également recommandé pour le photoréalisme
+- La génération d'images peut se faire via une requête API comme le montre  [basic_api_exemple.py](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
+
+
+
