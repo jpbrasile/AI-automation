@@ -87,6 +87,17 @@ Claude dit: [TextBlock(text='Bonjour !', type='text')]
     - Assemble toutes les vidéos individuelles en une seule vidéo.
     - Ajoute des transitions entre les diapositives.
 
-
-
 Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
+
+3. **Point d'étape:**
+- Nous avons réussi à mettre en oeuvre une applicatoin complexe sans coder une seule ligne. Cependant ce faisant nous avons détecté des pistes pour augmenter encore notre productivité
+  - **Automatiser les itérations de débuggage** , ce qui nous a fait perdre le plus de temps dans la mise au point du code  
+  - Faire du web scraping pour voir si notre problème n'est pas déjà résolu par ailleurs
+  - Passer à l'open source, en particulier pour la création d'image qui constitue le poste de dépense le plus élevé pour la création d'une vidéo
+ 
+4. **Coding assistant: AIDER+Sonnet**
+- On crée le répertoire ```coding_assistant``` et on lance ```conda activate teambot```
+- On suit les [instructions d'installation](https://github.com/paul-gauthier/aider) 
+- mais il faut l'adapter au termial powershell :```$env:ANTHROPIC_API_KEY="sk... "```
+- Nous allons testé le potentiel d'AIDER en intallant le générateur d'image [Comfyui](https://github.com/comfyanonymous/ComfyUI) dans un container docker 
+  - AIDER créé les fichiers adhoc et nous demande de lancer ```docker-compose up --build```ce que nous faisons dans un autre terminal.
