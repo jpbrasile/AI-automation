@@ -1,3 +1,6 @@
+__***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
+
+
 # AI-automation
 Tout faire avec l'IA. Elle fait le boulot sous votre contrôle et vous forme à comprendre comment tout ça fonctionne.
 
@@ -117,14 +120,10 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
 Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que vous devez suivre :
 
 1. **Créez un compte GitHub** :]([https://chatgpt.com/c/2a5fd138-49c0-42bb-a057-a831e6dbc5ea](https://chatgpt.com/c/37b0d84b-d7bd-4455-b5ae-44082f81226c))
--  Il faut créer un dépot public sur Github
--  Le cloner en local ```git clone https://github.com/jpbrasile/github.io```
-- Créez un fichier `index.html` avec un contenu de base en utilisant la commande :
-       ```
-       echo "<html><head><title>Mon Site</title></head><body><h1>Bonjour Monde</h1></body></html>" > index.html
-       ```
-  
-  6. **Publiez vos modifications** :
+- Il faut créer un dépot public sur Github
+- Créez un fichier `index.html` avec un contenu ```<html><head><title>Mon Site</title></head><body><h1>Bonjour Monde JPB !</h1></body></html>```
+- Le cloner en local ```git clone https://github.com/jpbrasile/github.io```
+- **Publiez vos modifications** :
      - Ajoutez les fichiers modifiés à votre dépôt :
        ```
        git add --all
@@ -137,5 +136,6 @@ Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que 
        ```
        git push -u origin main
        ```
-  
+  - Il faut faire "sign in with a code" pour parvenir à valider le push
+    
   Une fois ces étapes terminées, votre site sera en ligne à l'adresse [https://username.github.io/github.io/](https://jpbrasile.github.io/github.io/). 
