@@ -116,33 +116,15 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
 
 Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que vous devez suivre :
 
-1. **Créez un compte GitHub** :](https://chatgpt.com/c/2a5fd138-49c0-42bb-a057-a831e6dbc5ea)
-   Si vous n'avez pas encore de compte GitHub, vous devez en créer un sur [GitHub](https://github.com).
-
-  2. **Créez un nouveau dépôt public** :
-     - Allez sur [GitHub](https://github.com/new) et créez un nouveau dépôt public nommé `username.github.io`, où `username` est votre nom d'utilisateur sur GitHub.
-     - Il est crucial que le nom du dépôt corresponde exactement à votre nom d'utilisateur GitHub pour que cela fonctionne.
-  
-  3. **Clonez le dépôt** :
-     - Ouvrez un terminal sur votre ordinateur.
-     - Naviguez jusqu'au dossier où vous souhaitez stocker votre projet.
-     - Clonez le dépôt que vous venez de créer en utilisant la commande suivante:
-       ```
-       git clone https://github.com/username/username.github.io
-       ```
-     - Remplacez `username` par votre nom d'utilisateur GitHub.
-  
-  4. **Ajoutez un fichier HTML** :
-     - Accédez au dossier du projet en tapant :
-       ```
-       cd username.github.io
-       ```
-     - Créez un fichier `index.html` avec un contenu de base en utilisant la commande :
+1. **Créez un compte GitHub** :]([https://chatgpt.com/c/2a5fd138-49c0-42bb-a057-a831e6dbc5ea](https://chatgpt.com/c/37b0d84b-d7bd-4455-b5ae-44082f81226c))
+-  Il faut créer un dépot public sur Github
+-  Le cloner en local ```git clone https://github.com/jpbrasile/github.io```
+- Créez un fichier `index.html` avec un contenu de base en utilisant la commande :
        ```
        echo "<html><head><title>Mon Site</title></head><body><h1>Bonjour Monde</h1></body></html>" > index.html
        ```
   
-  5. **Publiez vos modifications** :
+  6. **Publiez vos modifications** :
      - Ajoutez les fichiers modifiés à votre dépôt :
        ```
        git add --all
@@ -156,4 +138,4 @@ Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que 
        git push -u origin main
        ```
   
-  Une fois ces étapes terminées, votre site sera en ligne à l'adresse `https://username.github.io`. Vous pouvez éditer votre `index.html` pour personnaliser le contenu de votre site.
+  Une fois ces étapes terminées, votre site sera en ligne à l'adresse [https://username.github.io/github.io/](https://jpbrasile.github.io/github.io/). 
