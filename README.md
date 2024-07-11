@@ -103,7 +103,7 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
 - Il conserve un logbook des actions entreprises (```.aider.chat.history.md```) et un LLM comme Sonnet 3.5 ou GPT-4o peut alors en faire la synthèse:
   ```J'ai eu des problèmes qui ont été résolu dans le document joint, fais en la synthèse```
 
-5. [**Text to image local dans docker**](
+5. [**Text to image local dans docker**](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
 - Il faut "alimenter" comfyui en y rajoutant les chkpoints requis à placer dans le répertoire : ```C:\Users\test\Documents\AI_Automation\coding_assistant\comfyui\storage\ComfyUI\models\checkpoints```
 - Il n'y a pas de consensus clair sur un seul « meilleur » point de contrôle pour ComfyUI, car cela dépend beaucoup de vos préférences personnelles et du type d'image que l'on souhaite générer. Cependant, plusieurs points de contrôle sont fréquemment recommandés pour leur qualité :
   - SDXL (Stable Diffusion XL) : C'est un modèle de base très performant, particulièrement bon pour le réalisme et la qualité générale des images.
@@ -112,6 +112,48 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
   - Vision réaliste : Excellent pour générer des humains réalistes.
   - RealVis XL : Également recommandé pour le photoréalisme
 - La génération d'images peut se faire via une requête API comme le montre  [basic_api_exemple.py](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
+6. [**Créer son site en ligne avec Github**:
 
+Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que vous devez suivre :
 
+1. **Créez un compte GitHub** :](https://chatgpt.com/c/2a5fd138-49c0-42bb-a057-a831e6dbc5ea)
+   Si vous n'avez pas encore de compte GitHub, vous devez en créer un sur [GitHub](https://github.com).
 
+  2. **Créez un nouveau dépôt public** :
+     - Allez sur [GitHub](https://github.com/new) et créez un nouveau dépôt public nommé `username.github.io`, où `username` est votre nom d'utilisateur sur GitHub.
+     - Il est crucial que le nom du dépôt corresponde exactement à votre nom d'utilisateur GitHub pour que cela fonctionne.
+  
+  3. **Clonez le dépôt** :
+     - Ouvrez un terminal sur votre ordinateur.
+     - Naviguez jusqu'au dossier où vous souhaitez stocker votre projet.
+     - Clonez le dépôt que vous venez de créer en utilisant la commande suivante:
+       ```
+       git clone https://github.com/username/username.github.io
+       ```
+     - Remplacez `username` par votre nom d'utilisateur GitHub.
+  
+  4. **Ajoutez un fichier HTML** :
+     - Accédez au dossier du projet en tapant :
+       ```
+       cd username.github.io
+       ```
+     - Créez un fichier `index.html` avec un contenu de base en utilisant la commande :
+       ```
+       echo "<html><head><title>Mon Site</title></head><body><h1>Bonjour Monde</h1></body></html>" > index.html
+       ```
+  
+  5. **Publiez vos modifications** :
+     - Ajoutez les fichiers modifiés à votre dépôt :
+       ```
+       git add --all
+       ```
+     - Faites un commit des modifications :
+       ```
+       git commit -m "Initial commit"
+       ```
+     - Poussez les modifications sur GitHub :
+       ```
+       git push -u origin main
+       ```
+  
+  Une fois ces étapes terminées, votre site sera en ligne à l'adresse `https://username.github.io`. Vous pouvez éditer votre `index.html` pour personnaliser le contenu de votre site.
