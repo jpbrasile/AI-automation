@@ -21,7 +21,8 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 
 - Donc utiliser **Sonnet 3.5** et **GPT-4o** pour avoir les meilleures réponses à nos questions.
 - [**Perplexity**](https://www.perplexity.ai/) est un autre incontournable pour surfer sur le web ( que nous contournerons quand même plus tard ! 😊)
-- [**Harpa**](Harpa.ai) permet d'interagir avec une page web ou une video YouTube  
+- [**Harpa**](Harpa.ai) permet d'interagir avec une page web ou une video YouTube
+- **Copilot de Microsoft**
 - Je vous laisse le soin de tester ces différents logiciels qui même dans leurs versions gratuites amélioreront sensiblement votre productivité.
 
 ## Les incontournables pour automatiser:
@@ -138,4 +139,46 @@ Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que 
        ```
   - Il faut faire "sign in with a code" pour parvenir à valider le push
     
-  Une fois ces étapes terminées, votre site sera en ligne à l'adresse [https://username.github.io/github.io/](https://jpbrasile.github.io/github.io/). 
+  Une fois ces étapes terminées, votre site sera en ligne à l'adresse [https://username.github.io/github.io/](https://jpbrasile.github.io/github.io/).
+
+  7- **Créer un story teller automatique**
+- La première étape consiste à produire des images consistantes afin que les personnages ou objets reproduits sur plusieurs diapositives soient quasi-identiques:
+  - Nous avons créé un "méta-prompt" qui à partir d'un descriptif simple <situation> fournit des images consistantes:
+  - Méta-prompt:
+
+```
+Prompt_Structure:
+{scene_setting}. {entity1_name} ({entity1_traits}) {action1} {object1_name} ({object1_traits}). {entity2_name} ({entity2_traits}) {action2}. {atmosphere}
+
+Definitions:
+- scene_setting: Brief description of location and context
+- entity1_name: Identifier for the first entity (e.g., man_1, woman_1, dog_1)
+- entity1_traits: age, physical_appearance, clothing
+- action1: Main action of entity1
+- object1_name: Identifier for the main object (e.g., watch_1, map_1)
+- object1_traits: material, distinctive_features, size
+- entity2_name: Identifier for the second entity
+- entity2_traits: age, physical_appearance, clothing/characteristics
+- action2: Main action of entity2
+- atmosphere: General ambiance and shared activity
+
+Instructions:
+1. Replace each element with specific details consistent with the provided <situation>.
+2. Maintain coherence between entities, their actions, and the context.
+3. Use unique identifiers for entities and objects to facilitate reference and reuse.
+
+Example:
+Cafe_table_1 in a bustling coffee shop. Man_1 (25 years old, short brown hair, white shirt and blue jeans) carefully examines Watch_1 (antique gold, floral engravings, normal size). Woman_1 (70 years old, gray hair in a bun, red floral dress and round glasses) leans forward with interest. They are absorbed in their animated conversation.
+```
+- Sonnet a réalisé le prompt spécifique à partir de ```<situation> A man walking his dog in the forest```
+```
+Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 years old, salt-and-pepper hair, rugged stubble, green waterproof jacket and khaki hiking pants) studies Map_1 (weatherproof paper, colorful trail markings, slightly creased) while striding purposefully. Dog_1 (6 years old, German Shepherd, glossy black and tan coat, red nylon collar with tags) trots eagerly ahead, nose twitching at the scent of pine and earth. They are enveloped in a serene atmosphere of natural exploration, with a gentle breeze rustling through the canopy above.
+``` 
+  - Voilà le résultat fournit par copilot pour la création d'image avec copilot:
+![image](https://github.com/jpbrasile/AI-automation/assets/8331027/497bf3b4-b95d-451a-8775-1c99a2f5ac5d)
+  - et avec leonardo.ai (qui oublit la carte et met le "collier rouge" sur le vieil homme) :
+![image](https://github.com/jpbrasile/AI-automation/assets/8331027/ed959f12-0774-472a-950f-e810baa0c861)
+
+
+  - La deuxième étape consiste à avoir le script de la vidéo, c'est à dire tous les éléments textuels qui permettront la création automatique de la vidéo.  
+
