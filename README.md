@@ -1,5 +1,20 @@
 __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
 
+**TO DO  ⬜ / DONE ✅** / en cours ⚙️
+| Outils       | Briques de teambot       | TO DO  ⬜ |
+|-------------------|-------------------|-------------------|
+| - Prompting ✅| - Site web sur Github (7) ✅      | Traitement d'images |
+| - Docker  ✅| - Simple API locale (1) ✅      | Speech to text via python |
+| - Github ✅| - Programmation no code (AIDER) (4) ✅      |- Web scrapping via python ⬜      |
+| - GPT-4o ✅| -  LLM api en local (LM Studio)       |- RAG via python ⬜      |
+| - Anthropic chat & API (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs    |
+| - Perplexity   ✅|- Text to vidéo via python (3)    ✅       |-  Agents    |
+| - Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla)    |
+| - Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (8) ⚙️      |
+| - Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local     |
+| - Hedra ✅ | - Vidéo-livre narratif généré à partir de texte ⚙️     |- Remote PC (Kaggle)     |
+| - Mistral| - LLM via python (2)  ✅      |-  LLM en //     |
+| - Deepseek | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
 
 # AI-automation
 Tout faire avec l'IA. Elle fait le boulot sous votre contrôle et vous forme à comprendre comment tout ça fonctionne.
@@ -38,7 +53,7 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 - Le coeur du système, les **LLM** (Large language model)  recoivent du texte, le traite et fournissent du texte en retour. Le texte d'entrée doit être tel qu'il exprime clairement et concrètement nos attentes (c'est le prompting)
 - Le texte en retour peut être formaté pour correspondre à une réponse de type texte brut, JSON,  markdown, HTML , code , API ... suivant le post processing envisagé.
 
-## Création automatique d'une API web qui peut effectuer deux opérations mathématiques :
+1. ## Création automatique d'une API web qui peut effectuer deux opérations mathématiques :
 
 - Additionner deux nombres
 - Multiplier deux nombres
@@ -61,7 +76,7 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
     - Le code python créant les MP3 et les images et qui les stockent
     - Le code python qui fait l'assemblage
 - Ce dégrossissage montre qu'il est préférable d'avancer pas à pas en construisant et validant pas à pas le code python correspondant, ce que nous allons faire maintenant avec un nouveau thread sonnet 3.5.
-1. Créer un code python permettant de dialoguer avec sonnet 3.5
+2. **Créer un code python permettant de dialoguer avec sonnet 3.5**
   - On utilisera Visual Studio Code pour la mise en oeuvre et pour tester les codes
   - On utilisera anaconda pour créer un environnement logiciel spécifique. Nous utiliserons l'environnement teambot déjà créer avec `conda activate teambot` dans un terminal 
   - On crée un répertoire de travail video-maker dans lequel on met le fichier .env avec nos clefs API, ainsi que les fichiers requirements.txt et anthropic-api-hello-world.py créer par sonnet 3.5
@@ -74,7 +89,7 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 Claude dit: [TextBlock(text='Bonjour !', type='text')]
 ```
 
-2. [**Création d'une vidéo à partir d'un texte**](https://claude.ai/chat/c33dece9-e5ab-4206-98c6-de644cb1d731)  
+3. [**Création d'une vidéo à partir d'un texte**](https://claude.ai/chat/c33dece9-e5ab-4206-98c6-de644cb1d731)  
 - Ce projet automatise la création de vidéos éducatives à partir de contenu textuel, utilisant diverses technologies et APIs. Le processus se déroule en plusieurs étapes intégrées dans un script Python unique :
   - Conversion du texte :
     - Lit le contenu du fichier PLACE_HOLDER_TEXTE_VIDEO.txt.
@@ -93,13 +108,13 @@ Claude dit: [TextBlock(text='Bonjour !', type='text')]
 
 Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
 
-3. **Point d'étape:**
+4. **Point d'étape:**
 - Nous avons réussi à mettre en oeuvre une applicatoin complexe sans coder une seule ligne. Cependant ce faisant nous avons détecté des pistes pour augmenter encore notre productivité
   - **Automatiser les itérations de débuggage** , ce qui nous a fait perdre le plus de temps dans la mise au point du code
   - Passer à l'open source, en particulier pour la création d'image qui constitue le poste de dépense le plus élevé pour la création d'une vidéo
   - Faire du web scraping pour voir si notre problème n'est pas déjà résolu par ailleurs
  
-4. **Coding assistant: AIDER+Sonnet**
+5. **Coding assistant: AIDER+Sonnet**
 - On crée le répertoire ```coding_assistant``` et on lance ```conda activate teambot```
 - On suit les [instructions d'installation](https://github.com/paul-gauthier/aider) 
 - Mais il faut l'adapter au terminal powershell :```$env:ANTHROPIC_API_KEY="sk... "```
@@ -107,7 +122,7 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
 - Il conserve un logbook des actions entreprises (```.aider.chat.history.md```) et un LLM comme Sonnet 3.5 ou GPT-4o peut alors en faire la synthèse:
   ```J'ai eu des problèmes qui ont été résolu dans le document joint, fais en la synthèse```
 
-5. [**Text to image local dans docker**](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
+6. [**Text to image local dans docker**](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
 - Il faut "alimenter" comfyui en y rajoutant les chkpoints requis à placer dans le répertoire : ```C:\Users\test\Documents\AI_Automation\coding_assistant\comfyui\storage\ComfyUI\models\checkpoints```
 - Il n'y a pas de consensus clair sur un seul « meilleur » point de contrôle pour ComfyUI, car cela dépend beaucoup de vos préférences personnelles et du type d'image que l'on souhaite générer. Cependant, plusieurs points de contrôle sont fréquemment recommandés pour leur qualité :
   - SDXL (Stable Diffusion XL) : C'est un modèle de base très performant, particulièrement bon pour le réalisme et la qualité générale des images.
@@ -116,11 +131,11 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
   - Vision réaliste : Excellent pour générer des humains réalistes.
   - RealVis XL : Également recommandé pour le photoréalisme
 - La génération d'images peut se faire via une requête API comme le montre  [basic_api_exemple.py](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
-6. [**Créer son site en ligne avec Github**:
+7. [**Créer son site en ligne avec Github**:
 
 Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que vous devez suivre :
 
-1. **Créez un compte GitHub** :]([https://chatgpt.com/c/2a5fd138-49c0-42bb-a057-a831e6dbc5ea](https://chatgpt.com/c/37b0d84b-d7bd-4455-b5ae-44082f81226c))
+1. [**Créez un compte GitHub** :]([https://chatgpt.com/c/2a5fd138-49c0-42bb-a057-a831e6dbc5ea](https://chatgpt.com/c/37b0d84b-d7bd-4455-b5ae-44082f81226c))
 - Il faut créer un dépot public sur Github
 - Créez un fichier `index.html` avec un contenu ```<html><head><title>Mon Site</title></head><body><h1>Bonjour Monde JPB !</h1></body></html>```
 - Le cloner en local ```git clone https://github.com/jpbrasile/github.io```
@@ -141,7 +156,7 @@ Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que 
     
   Une fois ces étapes terminées, votre site sera en ligne à l'adresse [https://username.github.io/github.io/](https://jpbrasile.github.io/github.io/).
 
-  7- **Créer un story teller automatique**
+  8- **Créer un story teller automatique**
 - La première étape consiste à produire des images consistantes afin que les personnages ou objets reproduits sur plusieurs diapositives soient quasi-identiques:
   - Nous avons créé un "méta-prompt" qui à partir d'un descriptif simple <situation> fournit des images consistantes:
   - Méta-prompt:
@@ -180,5 +195,24 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 ![image](https://github.com/jpbrasile/AI-automation/assets/8331027/ed959f12-0774-472a-950f-e810baa0c861)
 
 
+
   - La deuxième étape consiste à avoir le script de la vidéo, c'est à dire tous les éléments textuels qui permettront la création automatique de la vidéo.  
 
+
+9. **Text to CAD**
+- Sonnet 3.5 semble être capable de créer un [programme python capable de générer des formes complexes](https://claude.ai/chat/91026ba9-f74b-4622-b215-3148ada38543)
+-  Par ailleurs [CadQuery](https://github.com/CadQuery/cadquery) semble intéressant à évaluer 
+🛠️ CadQuery : Module Python intuitif pour créer des modèles paramétriques 3D.
+✍️ Scripts courts : Écrire des scripts simples pour produire des modèles de haute qualité.
+🆚 Comparaison OpenSCAD :
+📜 Utilise Python : Accès à de nombreuses bibliothèques et IDE.
+🔧 Noyau OCCT : Plus puissant que CGAL, supporte NURBS, splines, import/export STEP.
+⏱️ Scripts concis : Moins de code nécessaire grâce à des fonctionnalités de positionnement avancées.
+🚀 Génération rapide : Crée des fichiers STL, STEP, AMF et 3MF plus rapidement.
+💻 Intégration facile : Conçu comme bibliothèque Python sans GUI, idéal pour serveurs et scripts scientifiques.
+🛡️ Avantages :
+🔄 Modèles paramétriques facilement personnalisables.
+🖨️ Sortie de formats CAD de haute qualité (STEP, DXF, etc.).
+🧩 Assemblages imbriqués à partir de pièces individuelles.
+🚀 Version 2.0 :
+🔄 Basée sur OCCT : Plus de contrôle et de flexibilité, malgré une complexité accrue.
