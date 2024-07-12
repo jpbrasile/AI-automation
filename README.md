@@ -12,7 +12,7 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 | - Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla)    |
 | - Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
 | - Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local     |
-| - Hedra ✅ | - Vidéo-livre narratif généré à partir de texte (8) ⚙️     |- Remote PC (Kaggle)     |
+| - [Hedra](https://www.hedra.com/) ✅ | - Vidéo-livre narratif généré à partir de texte (8) ✅      |- Remote PC (Kaggle)     |
 | - Mistral| - LLM via python (2)  ✅      |-  LLM en //     |
 | - Deepseek | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
 |- [Groq](https://groq.com/) ✅ |-   |-   |
@@ -196,26 +196,42 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 
   - La deuxième étape consiste à avoir le script de la vidéo, c'est à dire tous les éléments textuels qui permettront la création automatique de la vidéo.  
     - Trouver des idées d'un livre : le prompting est essentiel pour y parvenir: [`trouve dix livres intéressants pour un enfant de 12 ans sur les super héros`](https://www.perplexity.ai/search/trouve-dix-livres-interessants-krUHHsFMRMGL1qYUI5.1yQ)
-    - Le livre étant choisi on récupère la trame en alimentant sonnet 3.5 de toutes les informations récupérées sur  le net et en lui demandant [`imagine le script de ce livre, en le structurant sous une forme compacte et structurée qui sera lu uniquement par un llm pas par un humain. utilise les ressorts classique d'écriture pour ce style de livre`](https://claude.ai/chat/72358672-7eb9-416a-a16a-dcad3a129953) puis la suite de la discussion avec sonnet 3.5 nous permet de générer un fichier story.JSON qui contient à la fois le voice over et le descriptif des images en conservant la consistance des personnages.
-    - Nous allons maintenant utiliser AIDER pour transfrormer le programme apte à généréer des tutoriels vidéo à ce nouveau besoin.
+    - Le livre étant choisi on récupère la trame en alimentant sonnet 3.5 de toutes les informations récupérées sur  le net et en lui demandant [`imagine le script de ce livre, en le structurant sous une forme compacte et structurée qui sera lu uniquement par un llm pas par un humain. utilise les ressorts classiques d'écriture pour ce style de livre`](https://claude.ai/chat/72358672-7eb9-416a-a16a-dcad3a129953) puis la suite de la discussion avec sonnet 3.5 nous permet de générer un fichier story.JSON qui contient à la fois le voice over et le descriptif des images en conservant la consistance des personnages.
+    - Nous allons maintenant utiliser AIDER pour transformer le programme apte à généréer des tutoriels vidéo à ce nouveau besoin.
+      - Nous avons synchronisé notre dépot video_maker à github afin que AIDER puisse le prendre en compte
+      - Nous avons créer une appli qui lance AIDER dans l'environnement conda teambot avec `python launch_aider.py` . Cela permet de récupérer la clef Anthropic à partir de .env et de lancer AIDER
+      - AIDER a alors répondu à notre demande de modification et nous fournit ici la synthèse de ses modifications
+        - 1. Dans le fichier `2JSONV2.py` :
+         - J'ai ajouté un nouveau mode de test local (mode 3) dans la fonction `main()`.
+         - J'ai créé des fonctions de remplacement (mock) pour `generate_image` et `text_to_speech` pour le mode de test local.
+         - J'ai modifié la logique de sélection du mode pour inclure le nouveau mode de test.
+
+        - 2. Dans le fichier `requirements.txt` :
+         - J'ai spécifié des versions précises pour chaque dépendance.
+         - J'ai remplacé 'dotenv' par 'python-dotenv'.
+         - J'ai supprimé 'peewee' car il ne semblait pas être utilisé dans le script actuel.
+
+        - 3. Je n'ai pas modifié les fichiers `PLACE_HOLDER_TEXTE_VIDEO.txt` et `story.json`.
+
+        Ces modifications visent à améliorer la testabilité du script et à assurer une meilleure reproductibilité de l'environnement de développement. Le mode de test local permet de tester le flux de travail sans faire d'appels API réels, ce qui peut être utile pour le débogage et les tests rapides.   
 
 9. **Text to CAD**
 - Sonnet 3.5 semble être capable de créer un [programme python capable de générer des formes complexes](https://claude.ai/chat/91026ba9-f74b-4622-b215-3148ada38543)
 -  Par ailleurs [CadQuery](https://github.com/CadQuery/cadquery) semble intéressant à évaluer 
-🛠️ CadQuery : Module Python intuitif pour créer des modèles paramétriques 3D.
-✍️ Scripts courts : Écrire des scripts simples pour produire des modèles de haute qualité.
-🆚 Comparaison OpenSCAD :
-📜 Utilise Python : Accès à de nombreuses bibliothèques et IDE.
-🔧 Noyau OCCT : Plus puissant que CGAL, supporte NURBS, splines, import/export STEP.
-⏱️ Scripts concis : Moins de code nécessaire grâce à des fonctionnalités de positionnement avancées.
-🚀 Génération rapide : Crée des fichiers STL, STEP, AMF et 3MF plus rapidement.
-💻 Intégration facile : Conçu comme bibliothèque Python sans GUI, idéal pour serveurs et scripts scientifiques.
-🛡️ Avantages :
-🔄 Modèles paramétriques facilement personnalisables.
-🖨️ Sortie de formats CAD de haute qualité (STEP, DXF, etc.).
-🧩 Assemblages imbriqués à partir de pièces individuelles.
-🚀 Version 2.0 :
-🔄 Basée sur OCCT : Plus de contrôle et de flexibilité, malgré une complexité accrue.
+- 🛠️ CadQuery : Module Python intuitif pour créer des modèles paramétriques 3D.
+- ✍️ Scripts courts : Écrire des scripts simples pour produire des modèles de haute qualité.
+- 🆚 Comparaison OpenSCAD :
+- 📜 Utilise Python : Accès à de nombreuses bibliothèques et IDE.
+- 🔧 Noyau OCCT : Plus puissant que CGAL, supporte NURBS, splines, import/export STEP.
+- ⏱️ Scripts concis : Moins de code nécessaire grâce à des fonctionnalités de positionnement avancées.
+- 🚀 Génération rapide : Crée des fichiers STL, STEP, AMF et 3MF plus rapidement.
+- 💻 Intégration facile : Conçu comme bibliothèque Python sans GUI, idéal pour serveurs et scripts scientifiques.
+- 🛡️ Avantages :
+  - 🔄 Modèles paramétriques facilement personnalisables.
+  - 🖨️ Sortie de formats CAD de haute qualité (STEP, DXF, etc.).
+  - 🧩 Assemblages imbriqués à partir de pièces individuelles.
+- 🚀 Version 2.0 :
+- 🔄 Basée sur OCCT : Plus de contrôle et de flexibilité, malgré une complexité accrue.
 
 10. **Utilisation de Github**
 - Voici les étapes pour transformer votre répertoire local en repository GitHub et synchroniser les deux avec Git :
