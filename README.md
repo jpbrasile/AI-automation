@@ -1,3 +1,5 @@
+Voir la section [2. Créer un code python permettant de dialoguer avec sonnet 3.5](2-**créer-un-code-python-permettant-de-dialoguer-avec-sonnet-3.5**)
+
 __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
 
 **TO DO  ⬜ / DONE ✅** / en cours ⚙️
@@ -10,12 +12,12 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 | - Anthropic chat & API (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs    |
 | - Perplexity   ✅|- Text to vidéo via python (3)    ✅       |-  Agents    |
 | - Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla)    |
-| - Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (8) ⚙️      |
+| - Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
 | - Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local     |
-| - Hedra ✅ | - Vidéo-livre narratif généré à partir de texte ⚙️     |- Remote PC (Kaggle)     |
+| - Hedra ✅ | - Vidéo-livre narratif généré à partir de texte (8) ⚙️     |- Remote PC (Kaggle)     |
 | - Mistral| - LLM via python (2)  ✅      |-  LLM en //     |
 | - Deepseek | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
-
+|- [Groq](https://groq.com/) ✅ |-   |-   |
 # AI-automation
 Tout faire avec l'IA. Elle fait le boulot sous votre contrôle et vous forme à comprendre comment tout ça fonctionne.
 
