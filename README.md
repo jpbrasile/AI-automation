@@ -1,5 +1,3 @@
-Voir la section [2. Créer un code python permettant de dialoguer avec sonnet 3.5](2-**créer-un-code-python-permettant-de-dialoguer-avec-sonnet-3.5**)
-
 __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
 
 **TO DO  ⬜ / DONE ✅** / en cours ⚙️
@@ -7,10 +5,10 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |-------------------|-------------------|-------------------|
 | - Prompting ✅| - Site web sur Github (7) ✅      | Traitement d'images |
 | - Docker  ✅| - Simple API locale (1) ✅      | Speech to text via python |
-| - Github ✅| - Programmation no code (AIDER) (4) ✅      |- Web scrapping via python ⬜      |
+| - [Github](https://github.com/) (10) ✅| - Programmation no code (AIDER) (4) ✅      |- Web scrapping via python ⬜      |
 | - GPT-4o ✅| -  LLM api en local (LM Studio)       |- RAG via python ⬜      |
-| - Anthropic chat & API (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs    |
-| - Perplexity   ✅|- Text to vidéo via python (3)    ✅       |-  Agents    |
+| - Anthropic [chat](https://claude.ai/new) & API (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs    |
+| - [Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ✅       |-  Agents    |
 | - Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla)    |
 | - Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
 | - Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local     |
@@ -196,10 +194,10 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
   - et avec leonardo.ai (qui oublit la carte et met le "collier rouge" sur le vieil homme) :
 ![image](https://github.com/jpbrasile/AI-automation/assets/8331027/ed959f12-0774-472a-950f-e810baa0c861)
 
-
-
   - La deuxième étape consiste à avoir le script de la vidéo, c'est à dire tous les éléments textuels qui permettront la création automatique de la vidéo.  
-
+    - Trouver des idées d'un livre : le prompting est essentiel pour y parvenir: [`trouve dix livres intéressants pour un enfant de 12 ans sur les super héros`](https://www.perplexity.ai/search/trouve-dix-livres-interessants-krUHHsFMRMGL1qYUI5.1yQ)
+    - Le livre étant choisi on récupère la trame en alimentant sonnet 3.5 de toutes les informations récupérées sur  le net et en lui demandant [`imagine le script de ce livre, en le structurant sous une forme compacte et structurée qui sera lu uniquement par un llm pas par un humain. utilise les ressorts classique d'écriture pour ce style de livre`](https://claude.ai/chat/72358672-7eb9-416a-a16a-dcad3a129953) puis la suite de la discussion avec sonnet 3.5 nous permet de générer un fichier story.JSON qui contient à la fois le voice over et le descriptif des images en conservant la consistance des personnages.
+    - Nous allons maintenant utiliser AIDER pour transfrormer le programme apte à généréer des tutoriels vidéo à ce nouveau besoin.
 
 9. **Text to CAD**
 - Sonnet 3.5 semble être capable de créer un [programme python capable de générer des formes complexes](https://claude.ai/chat/91026ba9-f74b-4622-b215-3148ada38543)
@@ -218,3 +216,36 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 🧩 Assemblages imbriqués à partir de pièces individuelles.
 🚀 Version 2.0 :
 🔄 Basée sur OCCT : Plus de contrôle et de flexibilité, malgré une complexité accrue.
+
+10. **Utilisation de Github**
+- Voici les étapes pour transformer votre répertoire local en repository GitHub et synchroniser les deux avec Git :
+  - Créez un nouveau repository sur GitHub :
+    - Connectez-vous à votre compte GitHub
+    - Cliquez sur "New repository"
+    - Donnez un nom à votre repository
+    - Ne cochez pas "Initialize this repository with a README"
+    - Cliquez sur "Create repository"
+  - Initialisez Git dans votre répertoire local :
+    - Ouvrez un terminal
+    - Naviguez vers votre répertoire local
+    - Exécutez : `git init`
+    - Ajoutez vos fichiers au staging area :
+    - Créez un fichier .gitignore :
+      - Dans votre répertoire local, créez un fichier nommé .gitignore s'il n'existe pas déjà.
+      - Ajoutez .env au .gitignore :
+      - Ouvrez le fichier .gitignore avec un éditeur de texte et ajoutez la ligne suivante `.env`
+      - `git add .`
+    - Faites votre premier commit :
+      - `git commit -m "Initial commit"`
+      - Liez votre repository local au repository GitHub :
+      - `git remote add origin https://github.com/votre-nom-utilisateur/nom-du-repo.git`
+    - Poussez vos changements vers GitHub :
+      - `git push -u origin main` (ou master si c'est votre branche principale)
+  - Après ces étapes, votre répertoire local sera synchronisé avec le repository GitHub. Pour les futures modifications :
+    - Faites vos changements localement
+    - Ajoutez les fichiers modifiés : git add .
+    - Committez : `git commit -m "Description des changements"`
+    - Poussez vers GitHub : `git push`
+  - Si vous avez déjà commité le fichier .env, vous devrez le retirer du suivi de Git : `git rm --cached .env`
+  	Cette commande supprime le fichier du repository Git sans le supprimer de votre système de fichiers local.
+  - Pour récupérer en local des modifications faites sur Github: `git pull origin main` 
