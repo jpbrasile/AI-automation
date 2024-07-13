@@ -1,21 +1,23 @@
 __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
 
-**TO DO  ⬜ / DONE ✅** / en cours ⚙️
-| Outils       | Briques de teambot       | TO DO  ⬜ |
+**TO DO  ⬜ / DONE ✅** / en cours ⚙️ / tools 🛠️
+|        |        |  |
 |-------------------|-------------------|-------------------|
-| - Prompting ✅| - Site web sur Github (7) ✅      | Traitement d'images |
-| - Docker  ✅| - Simple API locale (1) ✅      | Speech to text via python |
-| - [Github](https://github.com/) (10) ✅| - Programmation no code (AIDER) (4) ✅      |- Web scrapping via python ⬜      |
-| - GPT-4o ✅| -  LLM api en local (LM Studio)       |- RAG via python ⬜      |
-| - Anthropic [chat](https://claude.ai/new) & API (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs    |
-| - [Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ✅       |-  Agents    |
-| - Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla)    |
-| - Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
-| - Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local     |
-| - [Hedra](https://www.hedra.com/) ✅ | - Vidéo-livre narratif généré à partir de texte (8) ✅      |- Remote PC (Kaggle)     |
-| - Mistral| - LLM via python (2)  ✅      |-  LLM en //     |
-| - Deepseek | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
-|- [Groq](https://groq.com/) ✅ |-   |-   |
+| - Prompting (12) ✅| - Site web sur Github (7) ✅      | Traitement d'images(13)  ⚙️ |
+| - 🛠️ Docker  ✅| - Simple API locale (1) ✅      | Speech to text via python ⬜ |
+| - 🛠️[Github](https://github.com/) (10) ✅| - Programmation no code (AIDER) (4) ✅      |- Web scrapping via python ⚙️      |
+| - 🛠️ GPT-4o ✅ et [playground](https://platform.openai.com/playground/chat?models=gpt-4o)| -  🛠️ LM Studio ✅       |- RAG via python ⬜      |
+| - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs  ⬜  |
+| - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ✅       |-  Agents  ⬜  |
+| - 🛠️ Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla) ⬜   |
+| - 🛠️ Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
+| - 🛠️ Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local ⬜    |
+| - 🛠️[Hedra](https://www.hedra.com/) ✅ | - Vidéo-livre narratif généré à partir de texte (8) ✅      |- Remote PC (Kaggle) ⬜    |
+| - 🛠️Mistral| - LLM via python (2)  ✅      |-  LLM en //   ⬜  |
+| - 🛠️Deepseek | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
+|- 🛠️ [Groq](https://groq.com/) ✅ |🛠️ Hugging Face ✅  |- Coder à partir de GitHub, HF, papers with code  ⬜    |
+|- 🛠️VS studio ✅ |- 🛠️ Kaggle ✅   |- 🛠️ Colab  ✅  |
+|- Caractères consistants ⬜ |-    |-   |
 # AI-automation
 Tout faire avec l'IA. Elle fait le boulot sous votre contrôle et vous forme à comprendre comment tout ça fonctionne.
 
@@ -264,4 +266,75 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
     - Poussez vers GitHub : `git push`
   - Si vous avez déjà commité le fichier .env, vous devrez le retirer du suivi de Git : `git rm --cached .env`
   	Cette commande supprime le fichier du repository Git sans le supprimer de votre système de fichiers local.
-  - Pour récupérer en local des modifications faites sur Github: `git pull origin main` 
+  - Pour récupérer en local des modifications faites sur Github: `git pull origin main`
+
+11. **Web scraping via python** 
+  -[**GPT Researcher**](https://docs.gptr.dev/docs/gpt-researcher/introduction) est un équivalent à Perplexica
+
+    - L'adaptation de ce logiciel pour utiliser les LLM Antropic (sonnet 3.5 et Haiku) a été faite.
+    - Il faut conserver l'abonnemment à openai pour la création de l'embedding 
+    - Lancement avec `(teambot) PS C:\Users\test\Documents\TeambotV1\gpt-researcher> uvicorn main:app --reload`
+    - Aller sur `http://localhost:8000/#form`pour le lancer
+
+    - **Modifications effectuées pour pouvoir utiliser GPT-Resercher avec un script Python:**
+
+      - [Le fil de la discussion avec sonnet 3.5 nous adéjà permis d'y parvenir (Teambot)](https://claude.ai/chat/49d8dd3c-e666-4851-ba3e-835da8377163)
+      - Nous allons récupéré de façon compacte la façon d'y parvenir :
+        - Adapter .env pour Anthropic:
+
+          - Modifier: `LLM_PROVIDER=anthropic`
+          - Ajouter: `FAST_LLM_MODEL=claude-3-haiku-20240307`
+          - Ajouter: `SMART_LLM_MODEL=claude-3-5-sonnet-20240620`
+          - Conserver: ANTHROPIC_API_KEY existant
+        
+        
+        - Remplacer OpenAI par Anthropic:
+        
+          - Importer: `from anthropic import Anthropic, CLAUDE_3_HAIKU_20240307`
+          - Initialiser: `anthropic = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])`
+          - Adapter `create_chat_completion()`: Utiliser `anthropic.messages.create()` avec model, max_tokens, temperature, messages
+          - Mettre à jour la gestion des erreurs: Capturer APIError et APITimeoutError d'Anthropic
+        
+        
+        - Ajouter endpoint API dans server.py:
+        
+          - Importer: from fastapi import HTTPException; from pydantic import BaseModel
+          - Définir: class ResearchRequest(BaseModel): task: str; report_type: str; agent: str
+          - Ajouter: @app.post("/api/research") async def api_research(request: ResearchRequest): ...
+        
+        
+        - Modifier WebSocketManager:
+        
+          - Mettre à jour start_streaming(): Ajouter paramètre websocket=None
+          - Adapter run_agent(): Gérer cas où websocket est None
+        
+        
+        - Adapter BasicReport et DetailedReport:
+        
+          - Ajouter `paramètre websocket=None` dans init
+          - Modifier `send_update()`: `if self.websocket: await self.websocket.send_json(...) else: print(...)`
+        
+        
+        - Mettre à jour génération PDF:
+        
+        - Remplacer md2pdf par reportlab dans utils.py
+        - Importer: `from reportlab.lib.pagesizes import letter; from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer; from reportlab.lib.styles import getSampleStyleSheet`
+        - Implémenter `write_md_to_pdf()` avec ReportLab: Convertir MD en texte, créer PDF simple
+        
+        
+        - Mettre à jour requirements.txt:
+        
+          - Ajouter: anthropic, reportlab
+          - Supprimer:  weasyprint, md2pdf
+        
+        
+        - Adapter tous les appels API:
+        
+          - Remplacer format OpenAI par format Anthropic dans tout le code
+          - Utiliser les modèles spécifiés dans .env (FAST_LLM_MODEL et SMART_LLM_MODEL)
+              
+
+12. **Exemple de prompting**
+- **Parler la langue du LLM:** : Un LLM peut comprendre des instructions concises et structurées, mais ill a tendance à ce mettre à la place ds humains en étant souvent un peu trop verbeux. Voilà comment s'y adapter `donne les <directives> permettant d'opérer ces adaptations par rapport à la configuration initiale sous forme de string :"""<directives>""" destiné à être pris en compte par un LLM et pas un humain (donc <directives> compactes et structurées`
+
+13. **Traitement d'images** : Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module.  
