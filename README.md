@@ -3,21 +3,27 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 **TO DO  ⬜ / DONE ✅** / en cours ⚙️ / tools 🛠️
 |        |        |  |
 |-------------------|-------------------|-------------------|
-| - Prompting (12) ✅| - Site web sur Github (7) ✅      | Traitement d'images(13)  ⚙️ |
+| - Prompting (12) ⚙️| - Site web sur Github (7) ✅      | Traitement d'images(13)  ⚙️ |
 | - 🛠️ Docker  ✅| - Simple API locale (1) ✅      | Speech to text via python ⬜ |
-| - 🛠️[Github](https://github.com/) (10) ✅| - Programmation no code (AIDER) (4) ✅      |- Web scrapping via python ⚙️      |
-| - 🛠️ GPT-4o ✅ et [playground](https://platform.openai.com/playground/chat?models=gpt-4o)| -  🛠️ LM Studio ✅       |- RAG via python ⬜      |
-| - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python   ✅     |-  GPTs  ⬜  |
-| - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ✅       |-  Agents  ⬜  |
+| - 🛠️[Github](https://github.com/) (10) ✅| -  (5)Programmation no code (AIDER ✅), (MicroAgent ⬜)     |- Web scrapping via python (11) ⚙️      |
+| - 🛠️ GPT-4o ✅ et [playground](https://platform.openai.com/playground/chat?models=gpt-4o)| -  🛠️ LM Studio ✅       |- RAG  (16)  ⚙️     |
+| - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python: payant(3. ✅) et gratuit local(19. ⬜)     |-  GPTs  ⬜  |
+| - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ⚙️       |-  Agents (21) ⬜  |
 | - 🛠️ Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla) ⬜   |
 | - 🛠️ Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
 | - 🛠️ Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local ⬜    |
-| - 🛠️[Hedra](https://www.hedra.com/) ✅ | - Vidéo-livre narratif généré à partir de texte (8) ✅      |- Remote PC (Kaggle) ⬜    |
-| - 🛠️Mistral| - LLM via python (2)  ✅      |-  LLM en //   ⬜  |
-| - 🛠️Deepseek | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
+| - 🛠️[Hedra](https://www.hedra.com/) ✅ | - Vidéo-livre narratif généré à partir de texte (8) ✅      |- Remote PC (18) ✅   |
+| - 🛠️Mistral| - LLM via python (2)  ✅      |-  [LLM en //](https://youtu.be/6hG39mr9c0k?si=jwaLEMEDurlWbHuF)   ⬜  |
+| - 🛠️[Deepseek api](https://www.deepseek.com/) ⬜  | - Text to image local (6)   ✅     |-  Open interpreter ⬜  |
 |- 🛠️ [Groq](https://groq.com/) ✅ |🛠️ Hugging Face ✅  |- Coder à partir de GitHub, HF, papers with code  ⬜    |
 |- 🛠️VS studio ✅ |- 🛠️ Kaggle ✅   |- 🛠️ Colab  ✅  |
-|- Caractères consistants ⬜ |-    |-   |
+|- Caractères consistants (14) ⚙️ |-  Apprendre de façon active (15) ⚙️  |- ⚙️ Détection automatique avec Sonnet (17)  |
+|- 🛠️ [Poe](https://poe.com/) ✅ |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
+- ⬜ : 🛠️ à évaluer (20)  |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
+
+
+
+
 # AI-automation
 Tout faire avec l'IA. Elle fait le boulot sous votre contrôle et vous forme à comprendre comment tout ça fonctionne.
 
@@ -25,6 +31,11 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 - Les bons outils à utiliser,
 - Comment bien poser votre problème
 - Comment apprendre cette nouvelle façon de travailler , en comprenant comment la magie opére.
+- Cela passe par l'emploi d'outils pour :
+  - Ne pas réinventer la roue, donc voir si notre problème n'est pas déjà résolu. c'est le "**web scraping**" en particulier sur Github, Hugging Face ou Papers with Code
+  - Récupérer l'état de l'art c'est le "web scraping" de site cpomme Arxiv en particulier et le **RAG** pour stocker le savoir
+  - Le programmer en "no code" avec les **coding assistants**
+  - Utiliser des **agents** collaborant entre eux pour résoudre les problèmes les plus complexes 
 
 
 
@@ -32,7 +43,7 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 
 - [Mieux vaut regarder les benchmarks pour choisir](https://klu.ai/glossary/mmlu-pro-eval)
 <img src="https://github.com/jpbrasile/AI-automation/assets/8331027/57f69c6d-9505-4b23-82a7-eee9025e392e" width="600" />
-
+  - ⬜ : [QWEN2](https://qwenlm.github.io/blog/qwen2/) est semble-t-il très performant (128 k de contexte) ainsi que [gemma2](https://artificialanalysis.ai/models/gemma-2-9b)
 
 
 
@@ -66,7 +77,7 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 - Vous voulez que n'importe qui puisse la télécharger et la lancer sur son propre ordinateur, quelle que soit sa configuration.
 - Vous avez besoin d'instructions claires sur comment lancer l'application et comment la reproduire sur un autre PC.
 - [**Dialogue avec sonnet 3.5** pour mettre en oeuvre la solution en "manuel"](https://claude.ai/chat/a71daeb6-5875-4ecb-9dc6-7dce126afde0) 
-- Nous verrons plus tard comment automatiser la mise en plac de ce type d'application en automatique avec AIDER
+- Nous verrons plus tard comment automatiser la mise en place de ce type d'application en automatique avec AIDER
   
 ## Faisons le tutoriel correspondant sous forme de vidéo
 - L'idée est de partir de la synthèse récapitulée par sonnet 3.5 de notre programme précédent pour en faire un tuto.
@@ -107,8 +118,8 @@ Claude dit: [TextBlock(text='Bonjour !', type='text')]
   - Agrégation finale :
     - Assemble toutes les vidéos individuelles en une seule vidéo.
     - Ajoute des transitions entre les diapositives.
-
-Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
+  - Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
+⚙️ : [**Text to video de longue durée**](https://video-infinity.tanzhenxiong.com/) en open source
 
 4. **Point d'étape:**
 - Nous avons réussi à mettre en oeuvre une applicatoin complexe sans coder une seule ligne. Cependant ce faisant nous avons détecté des pistes pour augmenter encore notre productivité
@@ -116,14 +127,20 @@ Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, 
   - Passer à l'open source, en particulier pour la création d'image qui constitue le poste de dépense le plus élevé pour la création d'une vidéo
   - Faire du web scraping pour voir si notre problème n'est pas déjà résolu par ailleurs
  
-5. **Coding assistant: AIDER+Sonnet**
-- On crée le répertoire ```coding_assistant``` et on lance ```conda activate teambot```
-- On suit les [instructions d'installation](https://github.com/paul-gauthier/aider) 
-- Mais il faut l'adapter au terminal powershell :```$env:ANTHROPIC_API_KEY="sk... "```
-- AIDER répond à nos directives et adapte en conséquence un repository qui a été cloné localement.
-- Il conserve un logbook des actions entreprises (```.aider.chat.history.md```) et un LLM comme Sonnet 3.5 ou GPT-4o peut alors en faire la synthèse:
-  ```J'ai eu des problèmes qui ont été résolu dans le document joint, fais en la synthèse```
+5. **Coding assistant**:
+- ✅: AIDER+Sonnet**
+  - On crée le répertoire ```coding_assistant``` et on lance ```conda activate teambot```
+  - On suit les [instructions d'installation](https://github.com/paul-gauthier/aider) 
+  - Mais il faut l'adapter au terminal powershell :```$env:ANTHROPIC_API_KEY="sk... "```
+  - AIDER répond à nos directives et adapte en conséquence un repository qui a été cloné localement.
+  - Il conserve un logbook des actions entreprises (```.aider.chat.history.md```) et un LLM comme Sonnet 3.5 ou GPT-4o peut alors en faire la synthèse:
+    ```J'ai eu des problèmes qui ont été résolu dans le document joint, fais en la synthèse```
+  - AIDER est [SOTA](https://aider.chat/docs/leaderboards/) avec Sonnet 3.5 mais il est aussi très performant avec DeepSeekCoder
+  - ⬜ :[AIDER avec deepSeek](https://youtu.be/Y-_0VkMUiPc?si=zAPZQrYj6yrMHhne)
+-  ⬜ [**Micr-oagent**](https://github.com/BuilderIO/micro-agent) : itération automatique sur des cas tests
+-  ⬜ [**CodeGeeX4**](https://github.com/THUDM/CodeGeeX4) : en plugin de VS code
 
+- 
 6. [**Text to image local dans docker**](https://claude.ai/chat/f8d04905-3570-4f00-b7e9-f220936ff540)
 - Il faut "alimenter" comfyui en y rajoutant les chkpoints requis à placer dans le répertoire : ```C:\Users\test\Documents\AI_Automation\coding_assistant\comfyui\storage\ComfyUI\models\checkpoints```
 - Il n'y a pas de consensus clair sur un seul « meilleur » point de contrôle pour ComfyUI, car cela dépend beaucoup de vos préférences personnelles et du type d'image que l'on souhaite générer. Cependant, plusieurs points de contrôle sont fréquemment recommandés pour leur qualité :
@@ -218,22 +235,25 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
         Ces modifications visent à améliorer la testabilité du script et à assurer une meilleure reproductibilité de l'environnement de développement. Le mode de test local permet de tester le flux de travail sans faire d'appels API réels, ce qui peut être utile pour le débogage et les tests rapides.   
 
 9. **Text to CAD**
-- Sonnet 3.5 semble être capable de créer un [programme python capable de générer des formes complexes](https://claude.ai/chat/91026ba9-f74b-4622-b215-3148ada38543)
--  Par ailleurs [CadQuery](https://github.com/CadQuery/cadquery) semble intéressant à évaluer 
-- 🛠️ CadQuery : Module Python intuitif pour créer des modèles paramétriques 3D.
-- ✍️ Scripts courts : Écrire des scripts simples pour produire des modèles de haute qualité.
-- 🆚 Comparaison OpenSCAD :
-- 📜 Utilise Python : Accès à de nombreuses bibliothèques et IDE.
-- 🔧 Noyau OCCT : Plus puissant que CGAL, supporte NURBS, splines, import/export STEP.
-- ⏱️ Scripts concis : Moins de code nécessaire grâce à des fonctionnalités de positionnement avancées.
-- 🚀 Génération rapide : Crée des fichiers STL, STEP, AMF et 3MF plus rapidement.
-- 💻 Intégration facile : Conçu comme bibliothèque Python sans GUI, idéal pour serveurs et scripts scientifiques.
-- 🛡️ Avantages :
-  - 🔄 Modèles paramétriques facilement personnalisables.
-  - 🖨️ Sortie de formats CAD de haute qualité (STEP, DXF, etc.).
-  - 🧩 Assemblages imbriqués à partir de pièces individuelles.
-- 🚀 Version 2.0 :
-- 🔄 Basée sur OCCT : Plus de contrôle et de flexibilité, malgré une complexité accrue.
+- ⚙️ :Sonnet 3.5 semble être capable de créer un [programme python capable de générer des formes complexes](https://claude.ai/chat/91026ba9-f74b-4622-b215-3148ada38543)
+- ⬜ :  Par ailleurs [CadQuery](https://github.com/CadQuery/cadquery) semble intéressant à évaluer 
+  - 🛠️ CadQuery : Module Python intuitif pour créer des modèles paramétriques 3D.
+  - ✍️ Scripts courts : Écrire des scripts simples pour produire des modèles de haute qualité.
+  - 🆚 Comparaison OpenSCAD :
+  - 📜 Utilise Python : Accès à de nombreuses bibliothèques et IDE.
+  - 🔧 Noyau OCCT : Plus puissant que CGAL, supporte NURBS, splines, import/export STEP.
+  - ⏱️ Scripts concis : Moins de code nécessaire grâce à des fonctionnalités de positionnement avancées.
+  - 🚀 Génération rapide : Crée des fichiers STL, STEP, AMF et 3MF plus rapidement.
+  - 💻 Intégration facile : Conçu comme bibliothèque Python sans GUI, idéal pour serveurs et scripts scientifiques.
+  - 🛡️ Avantages :
+    - 🔄 Modèles paramétriques facilement personnalisables.
+    - 🖨️ Sortie de formats CAD de haute qualité (STEP, DXF, etc.).
+    - 🧩 Assemblages imbriqués à partir de pièces individuelles.
+  - 🚀 Version 2.0 :
+  - 🔄 Basée sur OCCT : Plus de contrôle et de flexibilité, malgré une complexité accrue.
+- ⚙️ :[**BeeGraphy**](https://www.youtube.com/watch?v=MdNp6nQgqgU) : Text to CAD via remote API. Tutorial en cours 
+
+- ⚙️ A voir le [tutorial](https://zoo.dev/docs/tutorials/text-to-cad) 
 
 10. **Utilisation de Github**
 - Voici les étapes pour transformer votre répertoire local en repository GitHub et synchroniser les deux avec Git :
@@ -332,9 +352,61 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
         
           - Remplacer format OpenAI par format Anthropic dans tout le code
           - Utiliser les modèles spécifiés dans .env (FAST_LLM_MODEL et SMART_LLM_MODEL)
-              
-
+ - ⬜:  [**crawl4ai**](https://github.com/unclecode/crawl4ai) : gratuit accès par code python
+  - 🆓 Completely free and open-source
+  - 🤖 LLM-friendly output formats (JSON, cleaned HTML, markdown)
+  - 🌍 Supports crawling multiple URLs simultaneously
+  - 🎨 Extracts and returns all media tags (Images, Audio, and Video)
+  - 🔗 Extracts all external and internal links
+  - 📚 Extracts metadata from the page
+  - 🔄 Custom hooks for authentication, headers, and page modifications before crawling
+  - 🕵️ User-agent customization
+  - 🖼️ Takes screenshots of the page
+  - 📜 Executes multiple custom JavaScripts before crawling
+  - 📚 Various chunking strategies: topic-based, regex, sentence, and more
+  - 🧠 Advanced extraction strategies: cosine clustering, LLM, and more
+  - 🎯 CSS selector support
+  - 📝 Passes instructions/keywords to refine extraction
+                
+- ⬜:  [**beautifulsoup-vs-scrapy**: qui est le meilleur](https://scrapingrobot.com/blog/beautifulsoup-vs-scrapy/)
+  
 12. **Exemple de prompting**
 - **Parler la langue du LLM:** : Un LLM peut comprendre des instructions concises et structurées, mais ill a tendance à ce mettre à la place ds humains en étant souvent un peu trop verbeux. Voilà comment s'y adapter `donne les <directives> permettant d'opérer ces adaptations par rapport à la configuration initiale sous forme de string :"""<directives>""" destiné à être pris en compte par un LLM et pas un humain (donc <directives> compactes et structurées`
+- ⚙️: [**Prompt pour cloner un custom GPT**](https://www.youtube.com/watch?v=DPl46_9WCi0)
 
-13. **Traitement d'images** : Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module.  
+13. **Traitement d'images** : Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module:
+- Trouver [controlnet-union-sdxl-1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0) sur HuggingFace
+- ⚙️: [Un tutorial nécessaire pour la prise en main de ComfyUi](https://www.youtube.com/watch?v=zpJQUw_0lBI)  
+- L'installation sur ComfyUI n'est pas encore acquise mais il nous est possible d'utiliser [un espace HF qui le met en &#339;uvre](https://huggingface.co/spaces/Deadmon/union-sdxl):
+<table>
+  <tr>
+    <th>Prompt</th>
+    <th>Image</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      En mode manga : Night_sky_1 with a full moon. Piper_McNimbus (12 years old, long auburn hair, freckles, bright green eyes, wearing pajamas,) soars through the air, arms outstretched, with a joyful expression. Clouds_1 (wispy, moonlit) surround her. Stars_1 (twinkling, numerous) fill the background. The atmosphere is magical and liberating.
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/12e8187c-c43e-402e-9182-a4f2a3511136" alt="Generated Image" width="100%">
+    </td>
+  </tr>
+</table>
+
+14. **Caractères consistants:**
+- ⚙️: [ArtFlow](https://app.artflow.ai/character-builder?feature=actors) permet d'y parvenir pour 4 mn de vidéo en version gratuite.
+- ⚙️ : [On choisi le portrait, les vêtements et un prompt pour la pose](https://arxiv.org/html/2406.09162v1
+  
+15. ⚙️ [**Apprendre de façon active avec sonnet**](https://www.youtube.com/watch?v=Wf9hRb6pBXA)
+16. ⚙️ **RAG**:
+- ⬜ [**local et infini**](https://www.youtube.com/watch?v=5xPvsMX2q2M)
+- ⬜  : [**Tutorial pour interagir avec les data en python**](https://github.com/projectwilsen/KnowledgeGraphLLM/tree/main/tutorial). [Video YouTube](https://youtu.be/ky8LQE-82xs?si=fBtFkNnRC5BsJHaj)
+- ⬜  : [**GraphRAG**](https://youtu.be/6Yu6JpLMWVo?si=i2pk2P7yP60Q0-LM)
+17. ⚙️ [**Détection d'objets automatique avec Sonnet**](https://youtu.be/u-glnHI4zCY?si=GOxoN7xGd6C4k9eq)
+18.   ✅ **PC distant** : [Replicate](https://replicate.com/) : permet l'accès à des ressources (comme [la création d'images](https://replicate.com/bytedance/sdxl-lightning-4step/api) via des API ou playground :essais gratuit puis coût suivant le temps passé
+19. *text to speech** 
+  - ⬜  : [text to speech local et gratuit](https://www.youtube.com/watch?v=N0UrOr6LBkw)
+  - ⬜  : [alltalk_tts](https://github.com/erew123/alltalk_tts)
+20. ⬜ : A évaluer [Invideo](https://invideo.io/i/samsonvowles), [Replicate](https://replicate.com/), [Live-portrait](https://replicate.com/fofr/ve-portrait), [Toon crafter]https://replicate.com/fofr/tooncrafter), [Oldify](https://replicate.com/arielreplicate/oldify), [Pixverse](https://app.pixverse.ai/),[Pika](https://pika.art/), [Filmora](https://filmora.wondershare.net), [fooocus api](https://replicate.com/konieshadow/fooocus-api/api), [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main)
+21. **Agent**:
+- ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)        
