@@ -4,7 +4,7 @@ svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
 improved-interactive-macro-components-graph.html
 improved-interactive-macro-components-graph.html
 
-[Improved Interactive Macro Components Graph](./improved-interactive-macro-components-graph_svg.svg)
+[Improved Interactive Macro Components Graph](./improved-interactive-macro-components-graph-svg.svg)
 
 __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
 
