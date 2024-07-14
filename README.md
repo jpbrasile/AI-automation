@@ -417,10 +417,10 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 
 Un LLM de bon niveau peut quant'à lui prendre en compte directement le besoin exprimé par l'opérateur et générer automatiquement un graphe représentatif qu'il soumet à l'opérateur. De plus le LLM peut modifier, expliquer et utiliser ce graphe en fonction du contexte et de la demande de l'opérateur. On a donc l'avantage d'une représentation visuelle efficace sans en payer le prix.
 
-Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
+Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https://claude.ai/chat/ab1debd5-6406-45f9-9516-0d8d47461ab6)
 
 Le résultat est tout à fait correct : 
-![SVG Image](./interactive-macro-components-graph-svg.svg)
+![SVG Image](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
 
 De plus les graphes peuvent être rendus interactifs pour, par exemple, donner des informations complémentaires en un clic: 
 <table>
