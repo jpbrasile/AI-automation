@@ -421,18 +421,8 @@ Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https
 
 Le résultat est tout à fait correct : 
 [graphe interactif](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
-
-De plus les graphes peuvent être rendus interactifs pour, par exemple, donner des informations complémentaires en un clic: 
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/8e10a93b-7926-423e-b6d7-e269b2d34147" width="500" /></td>
-    <td><img src="https://github.com/user-attachments/assets/35089e4d-9490-442f-b7b0-b99d2b05f626" width="500" /></td>
-    <td><img src="https://github.com/user-attachments/assets/9564c4a0-7a34-4937-a63e-29a5d9c6978f" width="500" /></td>
-  </tr>
-</table>
-
-- Enfin le résultat ainsi obtenu peut être généraliser et adapter à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
-- Par exemple pour l'orchestrateur :  
+- Enfin le résultat ainsi obtenu peut être généralisé et adapté à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
+- La mise en oeuvre de ces prompts pour expliquer l'orchestration des agents en charge de la production du graphe - sans agent - et donc directement avec Sonnet 3.5 donne [des résultats qui pourraient être améliorés mais qui sont néanmoins très corrects]https://claude.site/artifacts/05390ce0-4167-4330-abdb-eb2c8915cd75)
 
 
 
