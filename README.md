@@ -9,7 +9,7 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 | - 🛠️ GPT-4o ✅ et [playground](https://platform.openai.com/playground/chat?models=gpt-4o)| -  🛠️ LM Studio ✅       |- RAG  (16)  ⚙️     |
 | - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python: payant(3. ✅) et gratuit local(19. ⬜)     |-  GPTs  ⬜  |
 | - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ⚙️       |-  Agents (21) ⬜  |
-| - 🛠️ Comfyui   ✅| - Tutoriel video automatique     |- Function calling (Gorilla) ⬜   |
+| - 🛠️ Comfyui   ✅| - ⬜:  Tutoriel video automatique     |- Function calling (Gorilla) ⬜   |
 | - 🛠️ Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
 | - 🛠️ Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local ⬜    |
 | - 🛠️[Hedra](https://www.hedra.com/) ✅ | - Vidéo-livre narratif généré à partir de texte (8) ✅      |- Remote PC (18) ✅   |
@@ -412,8 +412,27 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 21. **Agent**:
 - ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)
 22. **Learn AnyThing**:
-- un LLM peut produire des graphes interactifs, qui
-23. **Text to Graph**: Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter lz lisibilité au détriments de nouvelles interventions manuelles.
+- "Learn anything" est capable de partir de données obtenues par web scraping ou de données locales multimodales. Les images peuvent être interprétées, et les données graphiques et tableaux sont récupérés et intégrés dans les graphes de connaissance. Cette fonctionnalité permet d'enrichir les graphes avec des informations actualisées et diversifiées, provenant de différentes sources.
+- La connaissance peut être organisée de manière efficace sous forme de graphe, comme illustré dans l'image ci-dessous :
+
+<img src="https://github.com/user-attachments/assets/9c5d7cdd-b4e8-48ed-8a33-c2f8059b17e8" width= "50%">
+
+- Un modèle de langage large (LLM) est capable de générer des graphes interactifs (voir référence 23.) à partir d'informations même déstructurées.
+- Pour un utilisateur de la plateforme "Learn anything", chaque nœud représente une connaissance à acquérir. Le LLM (ou un agent spécifique) peut mettre en œuvre plusieurs fonctionnalités pour aider à cet apprentissage :
+    - _Faire un cours_ : Créer des cours, y compris des vidéos automatiques (voir référence 3.), qui peuvent s'adapter à la langue et au niveau de l'utilisateur.
+    - _Poser des questions_ : Encourager un apprentissage actif en posant des questions dont la complexité s'ajuste au niveau de l'utilisateur.
+    - _Proposer des solutions_ : Offrir des solutions, des corrections adaptées à la réponse reçue ou des pistes de résolution.
+    - _Suivi du niveau de connaissance_ : Maintenir un état du niveau de connaissance acquis, en changeant par exemple la couleur du nœud de blanc à vert pour les connaissances maîtrisées.
+    - _Séquençage des réactivations_ : Activer des séquences de réactivation de la connaissance dont la fréquence diminue à mesure que l'acquisition progresse.
+    - _Multimodalité_ : Utiliser la voix, l'image et la vidéo à la fois en entrée et en sortie pour une efficacité accrue.
+    - _Personnalisation avancée_ : Implémenter des algorithmes de personnalisation plus sophistiqués pour s'adapter aux préférences et au style d'apprentissage de chaque utilisateur.
+    - _Analyse des données d'apprentissage_ : Utiliser des analyses de données pour identifier les points faibles et proposer des plans d'amélioration personnalisés.
+    - _Gamification_ : Introduire des éléments de gamification pour rendre l'apprentissage plus engageant et motivant.
+    - _Feedback en temps réel_ : Fournir des retours en temps réel sur les performances de l'utilisateur pour un apprentissage plus réactif.
+
+.
+        
+23. **Text to Graph**: Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter la lisibilité au détriment de nouvelles interventions manuelles.
 
 Un LLM de bon niveau peut quant'à lui prendre en compte directement le besoin exprimé par l'opérateur et générer automatiquement un graphe représentatif qu'il soumet à l'opérateur. De plus le LLM peut modifier, expliquer et utiliser ce graphe en fonction du contexte et de la demande de l'opérateur. On a donc l'avantage d'une représentation visuelle efficace sans en payer le prix.
 
@@ -422,8 +441,8 @@ Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https
 Le résultat est tout à fait correct : 
 [graphe interactif](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
 
-On peut même faire des [svg interactif](https://claude.site/artifacts/1c2c5656-09c6-4e00-8e43-93284b0ebc6c)
-
+- On peut même faire des [svg interactif](https://claude.site/artifacts/1c2c5656-09c6-4e00-8e43-93284b0ebc6c)
+- et [adapter la forme et la couleur des blocs](https://claude.site/artifacts/62a55f84-d683-4caf-852b-8a5c9443406f)
 - Enfin le résultat ainsi obtenu peut être généralisé et adapté à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
 - La mise en oeuvre de ces prompts pour expliquer l'orchestration des agents en charge de la production du graphe - sans agent - et donc directement avec Sonnet 3.5 donne [des résultats qui pourraient être améliorés mais qui sont néanmoins très corrects](https://claude.site/artifacts/05390ce0-4167-4330-abdb-eb2c8915cd75)
 
