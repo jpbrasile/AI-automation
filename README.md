@@ -420,7 +420,7 @@ Un LLM de bon niveau peut quant'à lui prendre en compte directement le besoin e
 Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https://claude.ai/chat/ab1debd5-6406-45f9-9516-0d8d47461ab6)
 
 Le résultat est tout à fait correct : 
-![SVG Image](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
+[graphe interactif](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
 
 De plus les graphes peuvent être rendus interactifs pour, par exemple, donner des informations complémentaires en un clic: 
 <table>
