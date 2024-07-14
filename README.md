@@ -20,7 +20,7 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- Caractères consistants (14) ⚙️ |-  Apprendre de façon active (15) ⚙️  |- ⚙️ Détection automatique avec Sonnet (17)  |
 |- 🛠️ [Poe](https://poe.com/) ✅ |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
 |- ⬜ : 🛠️ à évaluer (20)  |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
-|- ⚙️: LearnAnything (22) 💡 | - Text to Graph (23)    |-     |
+|- ⚙️: LearnAnything (22) 💡 | - ⚙️: Text to Graph (23) 💡   |- ⬜ : RAG to Graph     |
 
 
 
@@ -421,6 +421,9 @@ Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https
 
 Le résultat est tout à fait correct : 
 [graphe interactif](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
+
+On peut même faire des [svg interactif](https://claude.site/artifacts/1c2c5656-09c6-4e00-8e43-93284b0ebc6c)
+
 - Enfin le résultat ainsi obtenu peut être généralisé et adapté à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
 - La mise en oeuvre de ces prompts pour expliquer l'orchestration des agents en charge de la production du graphe - sans agent - et donc directement avec Sonnet 3.5 donne [des résultats qui pourraient être améliorés mais qui sont néanmoins très corrects](https://claude.site/artifacts/05390ce0-4167-4330-abdb-eb2c8915cd75)
 
