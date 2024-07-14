@@ -1,15 +1,6 @@
-svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-</svg>
-improved-interactive-macro-components-graph.html
-improved-interactive-macro-components-graph.html
-
-![SVG Image](./interactive-macro-components-graph-svg.svg)
-
-
 __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le monde d'aujourd'hui on fait faire à l'IA, puis on apprend à partir de ce que l'IA a fait, on finit donc par savoir faire aussi. Du coup plus besoin de prof, il ne suffit que de vouloir faire pour parvenir à nos fins !! The sky is the limit !!!***__
 
-**TO DO  ⬜ / DONE ✅** / en cours ⚙️ / tools 🛠️
+**TO DO  ⬜ / DONE ✅** / **en cours** ⚙️ / **tools** 🛠️ / **innovations** 💡
 |        |        |  |
 |-------------------|-------------------|-------------------|
 | - Prompting (12) ⚙️| - Site web sur Github (7) ✅      | Traitement d'images(13)  ⚙️ |
@@ -28,7 +19,8 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- 🛠️VS studio ✅ |- 🛠️ Kaggle ✅   |- 🛠️ Colab  ✅  |
 |- Caractères consistants (14) ⚙️ |-  Apprendre de façon active (15) ⚙️  |- ⚙️ Détection automatique avec Sonnet (17)  |
 |- 🛠️ [Poe](https://poe.com/) ✅ |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
-- ⬜ : 🛠️ à évaluer (20)  |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
+|- ⬜ : 🛠️ à évaluer (20)  |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
+|- ⚙️: LearnAnything (22) 💡 | - Text to Graph (23)    |-     |
 
 
 
@@ -418,4 +410,30 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
   - ⬜  : [alltalk_tts](https://github.com/erew123/alltalk_tts)
 20. ⬜ : A évaluer [Invideo](https://invideo.io/i/samsonvowles), [Replicate](https://replicate.com/), [Live-portrait](https://replicate.com/fofr/ve-portrait), [Toon crafter]https://replicate.com/fofr/tooncrafter), [Oldify](https://replicate.com/arielreplicate/oldify), [Pixverse](https://app.pixverse.ai/),[Pika](https://pika.art/), [Filmora](https://filmora.wondershare.net), [fooocus api](https://replicate.com/konieshadow/fooocus-api/api), [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main)
 21. **Agent**:
-- ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)        
+- ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)
+22. **Learn AnyThing**:
+- un LLM peut produire des graphes interactifs, qui
+23. **Text to Graph**: Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter lz lisibilité au détriments de nouvelles interventions manuelles.
+
+Un LLM de bon niveau peut quant'à lui prendre en compte directement le besoin exprimé par l'opérateur et générer automatiquement un graphe représentatif qu'il soumet à l'opérateur. De plus le LLM peut modifier, expliquer et utiliser ce graphe en fonction du contexte et de la demande de l'opérateur. On a donc l'avantage d'une représentation visuelle efficace sans en payer le prix.
+
+Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
+
+Le résultat est tout à fait correct : 
+![SVG Image](./interactive-macro-components-graph-svg.svg)
+
+De plus les graphes peuvent être rendus interactifs pour, par exemple, donner des informations complémentaires en un clic: 
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/8e10a93b-7926-423e-b6d7-e269b2d34147" width="500" /></td>
+    <td><img src="https://github.com/user-attachments/assets/35089e4d-9490-442f-b7b0-b99d2b05f626" width="500" /></td>
+    <td><img src="https://github.com/user-attachments/assets/9564c4a0-7a34-4937-a63e-29a5d9c6978f" width="500" /></td>
+  </tr>
+</table>
+
+- Enfin le résultat ainsi obtenu peut être généraliser et adapter à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
+- Par exemple pour l'orchestrateur :  
+
+
+
+
