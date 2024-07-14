@@ -429,8 +429,12 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
     - _Analyse des données d'apprentissage_ : Utiliser des analyses de données pour identifier les points faibles et proposer des plans d'amélioration personnalisés.
     - _Gamification_ : Introduire des éléments de gamification pour rendre l'apprentissage plus engageant et motivant.
     - _Feedback en temps réel_ : Fournir des retours en temps réel sur les performances de l'utilisateur pour un apprentissage plus réactif.
+- Suite à un [dialogue avec Perplexity](https://www.perplexity.ai/search/what-is-the-interest-of-llama-6lm_fKVKQqeLarBCK0Z30g) à qui nous avons d'abord demandé d'analyser les performances du framework _llama-index agent_ , notre choix se porte sur langchain
+- Nous allons tenter le no code avec LangGraph pour répondre à notre besoin dans un nouveau [dialogue avec Sonnet 3.5](https://claude.ai/chat/c9a4a45f-0e90-43ac-a305-867cef5f2793). Malheureusement il donne un code non cohérent avec la réalité de LangGraph car il refuse de faire des recherches sur le net. Nous nous sommes donc reporté sur [Perplexity](https://www.perplexity.ai/search/detaille-langgraph-promptnode-PeOQJBUAT9mAJRrp.vjg5g).
+- Nous revenons sur [sonnet 3.5 avec le code proposé par Perplexity](https://claude.ai/chat/c9a4a45f-0e90-43ac-a305-867cef5f2793) pour générer le code dont voici la structure 
+  <img src="https://github.com/user-attachments/assets/2fa4a265-ce1d-4086-b1c6-e89a079ad8f0" width="50%">
+- Il ne ns restera plus qu'à valider le code avec l'aide d'AIDER
 
-.
         
 23. **Text to Graph**: Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter la lisibilité au détriment de nouvelles interventions manuelles.
 
