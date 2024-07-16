@@ -503,17 +503,24 @@ Try out our live research preview to see how STORM can help your knowledge explo
 
 Un LLM de bon niveau peut quant'à lui prendre en compte directement le besoin exprimé par l'opérateur et générer automatiquement un graphe représentatif qu'il soumet à l'opérateur. De plus le LLM peut modifier, expliquer et utiliser ce graphe en fonction du contexte et de la demande de l'opérateur. On a donc l'avantage d'une représentation visuelle efficace sans en payer le prix.
 
-Nous avons validé cette approche à travers un [dialogue avec Sonnet 3.5](https://claude.ai/chat/ab1debd5-6406-45f9-9516-0d8d47461ab6)
+Nous avons validé cette approche à travers un [premier dialogue avec Sonnet](https://claude.ai/chat/662358c3-056a-43d5-9fd0-11aee95b6a1a ) suivi d'un   [second dialogue](https://claude.ai/chat/ab1debd5-6406-45f9-9516-0d8d47461ab6) 
+
 
 Le résultat est tout à fait correct : 
 [graphe interactif](https://claude.site/artifacts/97fe422a-eb69-4c30-ad06-0caa1da58694)
 
+<img src="https://github.com/user-attachments/assets/6c3278cd-34e6-4f3e-8224-4cada7a21f35" width=50%)>
+
+
 - On peut même faire des [svg interactif](https://claude.site/artifacts/1c2c5656-09c6-4e00-8e43-93284b0ebc6c)
 - et [adapter la forme et la couleur des blocs](https://claude.site/artifacts/62a55f84-d683-4caf-852b-8a5c9443406f)
 - Enfin le résultat ainsi obtenu peut être généralisé et adapté à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
-- La mise en oeuvre de ces prompts pour expliquer l'orchestration des agents en charge de la production du graphe - sans agent - et donc directement avec Sonnet 3.5 donne [des résultats qui pourraient être améliorés mais qui sont néanmoins très corrects](https://claude.site/artifacts/05390ce0-4167-4330-abdb-eb2c8915cd75)
+- L'utilisation d'agents n'est vraiement utile que si des actions "intelligentes" doivent être entreprises, dans tous les autres cas il vaut mieux programmer (en no code !) la fonction que l'on souhaite réaliser. Avec de bonnes directives, Sonnets 3.5 produit un [résultat très satisfaisant](https://claude.site/artifacts/05390ce0-4167-4330-abdb-eb2c8915cd75), même si nous n'avons pas poussé plus loin le dialogue avec Sonnet pour élaborer un meilleur graphe et un meilleur prompt système pour l'obtenir :
+<img src="https://github.com/user-attachments/assets/e71b6e7a-f416-4368-bb8a-2345299cf8e9" width=50%>
+ 
 
-24. **API scinetifique**
+
+24. **API scientifique**
 - ⚙️ : On peut s'inspirer de cet [exemple qui fonctionne côté client](https://www.lgstoolkit.com/apps/trusses/). En particulier les jumeaux numériques devraintt permettre d'adapter cette approche pour même pour des simulations complexes 💡.  
 25. ⬜  :  **Déploiement du chatbot** avec [**pmfm**](pmfm.ai)
 -  🤖 Créer son assistant IA personnel sans coder
