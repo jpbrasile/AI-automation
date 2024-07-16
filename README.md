@@ -23,7 +23,7 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- ⚙️: LearnAnything (22) 💡 | - ⚙️: Text to Graph (23) 💡   |- ⬜ : RAG to Graph     |
 |- ⚙️ : API de calcul scientifique (24) 💡 |- ⬜ : Déploiement du chatbot (25)      |  Voice assistant multimodal (27)   |
 |- ⬜ : [OpenedAI Vision (~ GPT4-vision)](https://www.youtube.com/watch?v=61F_4zfs_Jg)|- ⬜ : Viva : traitement images et video (31)   |-  |
-
+| - ⬜ : Automatisation de tâches via API (32) |  |  |
 
 
 
@@ -222,7 +222,7 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 ``` 
   - Voilà le résultat fournit par copilot pour la création d'image avec copilot:
 ![image](https://github.com/jpbrasile/AI-automation/assets/8331027/497bf3b4-b95d-451a-8775-1c99a2f5ac5d)
-  - et avec leonardo.ai (qui oublit la carte et met le "collier rouge" sur le vieil homme) :
+  - et avec leonardo.ai (qui oublie la carte et met le "collier rouge" sur le vieil homme) :
 ![image](https://github.com/jpbrasile/AI-automation/assets/8331027/ed959f12-0774-472a-950f-e810baa0c861)
 
   - La deuxième étape consiste à avoir le script de la vidéo, c'est à dire tous les éléments textuels qui permettront la création automatique de la vidéo.  
@@ -396,7 +396,16 @@ Try out our live research preview to see how STORM can help your knowledge explo
 - ⬜: [**Gestion de projet**](https://www.youtube.com/watch?v=rbVTTZPbGfw) automatisée de sa création,WBS,Gantt, Mail ciblés ... avec le bon prompting et l'artefacts de Sonnet
 - ⬜ 💡 : Généraliser le concept précédent avec les script de l'auteur de la vidéo précédente et déployer les applications correspondantes sur [pmfm](pmfm.ai)
 13. **Traitement d'images** :
-- [Upscaling](https://flowt.ai/community/supir-v2-plugandplay-edition-n5acf-v) 
+- [Upscaling](https://flowt.ai/community/supir-v2-plugandplay-edition-n5acf-v)
+- [Avec abonnement mensuel](https://www.imagepipeline.io/pricing)
+- 🛠️ [**AuraFlow**](https://huggingface.co/spaces/multimodalart/AuraFlow)  produit des images de qualité et peut être mis en oeuvre soit en local soit àpartir d'un espace HuggingFace
+<img src="https://github.com/user-attachments/assets/1fd78976-37cb-47ca-92d9-3a0aea08fa66" width="20%">
+
+  🛠️ **Fooocus** accessible sur [Colab](https://colab.research.google.com/github/lllyasviel/Fooocus/blob/main/fooocus_colab.ipynb) et sur replicate  [fooocus api](https://replicate.com/konieshadow/fooocus-api/api)
+  
+<img src="https://github.com/user-attachments/assets/ae951b46-0b30-46da-b940-44b34f5af0fe" width="50%">
+
+   
 - Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module:
 - Trouver [controlnet-union-sdxl-1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0) sur HuggingFace
 - ⚙️: [Un tutorial nécessaire pour la prise en main de ComfyUi](https://www.youtube.com/watch?v=zpJQUw_0lBI)  
@@ -419,6 +428,9 @@ Try out our live research preview to see how STORM can help your knowledge explo
 14. **Caractères consistants:**
 - ⚙️: [ArtFlow](https://app.artflow.ai/character-builder?feature=actors) permet d'y parvenir pour 4 mn de vidéo en version gratuite.
 - ⚙️ : [On choisi le portrait, les vêtements et un prompt pour la pose](https://arxiv.org/html/2406.09162v1
+- ⬜ [**FaceChain**](https://facechain-fact.github.io/) produit des visages consistant à partir d'une seule image
+- <img src="https://github.com/user-attachments/assets/891dbdd2-8e7a-449f-bd86-83cf4ad8e866" width=50%>
+
   
 15. ⚙️ [**Apprendre de façon active avec sonnet**](https://www.youtube.com/watch?v=Wf9hRb6pBXA)
 16. ⚙️ **RAG**:
@@ -465,8 +477,9 @@ Try out our live research preview to see how STORM can help your knowledge explo
 19. *text to speech** 
   - ⬜  : [text to speech local et gratuit](https://www.youtube.com/watch?v=N0UrOr6LBkw)
   - ⬜  : [alltalk_tts](https://github.com/erew123/alltalk_tts)
-  - 🛠️ : [ttsopenai](https://ttsopenai.com/) : l'équivalent gratuit d'elevenlabs 
-20. ⬜ : A évaluer [Invideo](https://invideo.io/i/samsonvowles), [Replicate](https://replicate.com/), [Live-portrait](https://replicate.com/fofr/ve-portrait), [Toon crafter]https://replicate.com/fofr/tooncrafter), [Oldify](https://replicate.com/arielreplicate/oldify), [Pixverse](https://app.pixverse.ai/),[Pika](https://pika.art/), [Filmora](https://filmora.wondershare.net), [fooocus api](https://replicate.com/konieshadow/fooocus-api/api), [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main)
+  - 🛠️ : [ttsopenai](https://ttsopenai.com/) : l'équivalent gratuit d'elevenlabs
+  - 🛠️ : [suno](suno.ai) : Création de chanson à partir d'un texte
+20. ⬜ : A évaluer [Invideo](https://invideo.io/i/samsonvowles), [Replicate](https://replicate.com/), [Live-portrait](https://replicate.com/fofr/ve-portrait), [Toon crafter]https://replicate.com/fofr/tooncrafter), [Oldify](https://replicate.com/arielreplicate/oldify), [Pixverse](https://app.pixverse.ai/),[Pika](https://pika.art/), [Filmora](https://filmora.wondershare.net), [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main)
 21. **Agent**:
 - ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)
 - ⬜  : [Internet of Agents](https://github.com/OpenBMB/IoA) : Pourrait conduire à une IA incontrôlable en raison de plusieurs facteurs. Premièrement, l'automatisation et l'orchestration avancées permettent à l'IA de prendre des décisions et de former des équipes sans intervention humaine constante. Deuxièmement, la capacité de ces systèmes à manipuler et interpréter d'énormes quantités de données hétérogènes pourrait leur donner un accès à des informations sensibles et critiques. Troisièmement, la collaboration dynamique entre divers agents autonomes pourrait entraîner des comportements émergents imprévus et non supervisés. Quatrièmement, ces agents peuvent utiliser divers outils de manière autonome, amplifiant leur capacité à interagir avec le monde réel sans supervision. Enfin, la capacité de ces agents à apprendre et à s'adapter en temps réel pourrait les rendre de plus en plus autonomes, échappant ainsi au contrôle humain. Si ces systèmes ne sont pas correctement encadrés et surveillés, ils pourraient potentiellement prendre des décisions ou des actions qui échappent à la compréhension et au contrôle de leurs créateurs.
@@ -522,28 +535,32 @@ Le résultat est tout à fait correct :
 
 24. **API scientifique**
 - ⚙️ : On peut s'inspirer de cet [exemple qui fonctionne côté client](https://www.lgstoolkit.com/apps/trusses/). En particulier les jumeaux numériques devraintt permettre d'adapter cette approche pour même pour des simulations complexes 💡.  
-25. ⬜  :  **Déploiement du chatbot** avec [**pmfm**](pmfm.ai)
--  🤖 Créer son assistant IA personnel sans coder
-- 🚀 Lancer rapidement son chatbot sur internet
-- 💬 Discuter avec ses clients 24h/24 et 7j/7
- -💰 Gagner de l'argent avec son assistant IA (plans payants)
-- 🎨 Personnaliser l'apparence de son chatbot
-- 📊 Voir qui utilise son assistant et comment
-- 🌐 Avoir son propre site web pour son IA (plans payants)
-- 📱 Utiliser son assistant sur ordinateur et mobile
-- 📢 Faire connaître son entreprise grâce à l'IA
-- 🔒 Héberger son assistant en toute sécurité
-- 🔍 Être mieux trouvé sur internet
-- 🆓 Essayer gratuitement (50 messages/mois)
-- 💼 Avoir plus de fonctionnalités en payant
-- 🔄 Profiter des dernières nouveautés
-- 👥 Rejoindre une communauté de créateurs
-- 🛒 Utiliser l'IA pour l'e-commerce
-- 🏥 Créer un assistant santé
-- 🛍️ Aider les clients dans les magasins
-- 📚 Faire un assistant pour réviser ses cours
-- 💼 Préparer des entretiens d'embauche
-- 🌟 Lancer sa propre entreprise basée sur l'IA
+25. ⬜  :
+- Le chatbot doit s'adapter au contexte; [Un chatbot interactif peut être développé](https://www.youtube.com/watch?v=BGgx9921uWY)  
+- <img src="https://github.com/user-attachments/assets/958d8873-2ab4-4f5e-ad7b-80f10daa0ff9" width=50% >
+  
+-  **Déploiement du chatbot** avec [**pmfm**](pmfm.ai)
+  -  🤖 Créer son assistant IA personnel sans coder
+  - 🚀 Lancer rapidement son chatbot sur internet
+  - 💬 Discuter avec ses clients 24h/24 et 7j/7
+   -💰 Gagner de l'argent avec son assistant IA (plans payants)
+  - 🎨 Personnaliser l'apparence de son chatbot
+  - 📊 Voir qui utilise son assistant et comment
+  - 🌐 Avoir son propre site web pour son IA (plans payants)
+  - 📱 Utiliser son assistant sur ordinateur et mobile
+  - 📢 Faire connaître son entreprise grâce à l'IA
+  - 🔒 Héberger son assistant en toute sécurité
+  - 🔍 Être mieux trouvé sur internet
+  - 🆓 Essayer gratuitement (50 messages/mois)
+  - 💼 Avoir plus de fonctionnalités en payant
+  - 🔄 Profiter des dernières nouveautés
+  - 👥 Rejoindre une communauté de créateurs
+  - 🛒 Utiliser l'IA pour l'e-commerce
+  - 🏥 Créer un assistant santé
+  - 🛍️ Aider les clients dans les magasins
+  - 📚 Faire un assistant pour réviser ses cours
+  - 💼 Préparer des entretiens d'embauche
+  - 🌟 Lancer sa propre entreprise basée sur l'IA
 
 26. ⬜  : **Fabrication low cost**:
 - [Robot low cost](https://youtu.be/F7IjlE9MfJU?si=uduz-vRK8YOe4bfc)
@@ -557,3 +574,21 @@ Le résultat est tout à fait correct :
 30.  ⬜  : [**Transcription audio de réunion en local**](https://github.com/JuergenFleiss/aTrain) : multilangue et identifie les participants, open source
 31.  ⬜ : [**Viva : traitement images et video**]( https://vivago.ai/home) : Gratuit, Viva propose une gamme de fonctionnalités comprenant Texte en Vidéo, Amélioration de Vidéo, Image en Vidéo, Pinceau Magique (nouveau), Texte en Image, Image en Texte, Amélioration d'Image, Remplacement IA, Gomme Magique, Extension Magique et Texte en 3D (nouveau).
   - [Face Swap Any Video](https://youtu.be/XwaLYUjWaEg?si=JtLFSmNSP4jJ4kTy)
+32. **Automatisation de tâches**
+- [Fabric](https://github.com/danielmiessler/fabric)
+  - Voici une liste des principales fonctionnalités de Fabric, le framework open-source d'IA :
+    • 📝 Extraire les points clés et résumer des vidéos YouTube, podcasts et longs contenus
+    • ✍️ Rédiger des essais ou textes dans votre propre style à partir d'une simple idée
+    • 📚 Synthétiser des articles académiques complexes
+    • 🎨 Générer des prompts d'IA pour créer des images correspondant à un texte
+    • ⭐ Évaluer la qualité d'un contenu avant de le lire/regarder en entier
+    • 💻 Expliquer du code et améliorer de la documentation technique
+    • 📊 Analyser des données et extraire des insights
+    • 🗣️ Créer des posts pour les réseaux sociaux à partir de n'importe quel contenu
+    • 🔍 Extraire des citations et passages pertinents de différentes sources
+    • 📅 Analyser vos habitudes et routines à partir de vos notes et données personnelles
+    • 🧠 Résoudre des problèmes en les décomposant en sous-tâches
+    • 🔄 Combiner plusieurs prompts (appelés "Patterns") pour des tâches plus complexes
+    • 🛠️ Créer vos propres prompts personnalisés pour des besoins spécifiques
+    • 🗣️ Interagir par commandes vocales ou interface en ligne de commande
+    • 🔗 S'intégrer avec d'autres outils comme Obsidian pour la prise de notes
