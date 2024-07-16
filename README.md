@@ -188,6 +188,9 @@ Pour mettre en place un site personnel avec GitHub Pages, voici les étapes que 
   Une fois ces étapes terminées, votre site sera en ligne à l'adresse [https://username.github.io/github.io/](https://jpbrasile.github.io/github.io/).
 
   8- **Créer un story teller automatique**
+- [SEED](https://github.com/TencentARC/SEED-Story) : SEED-Story, un modèle de langage multimodal (MLLM) capable de générer de longues histoires multimodales composées de textes narratifs riches et cohérents, accompagnés d'images cohérentes en termes de personnages et de style, basé sur SEED-X. Avec StoryStream, un vaste ensemble de données spécialement conçu pour l'entraînement et l'évaluation comparative de la génération d'histoires multimodales.
+<img src="https://github.com/user-attachments/assets/8b2bb448-b9ff-452d-b316-885dda145ae9" width=350%">
+
 - La première étape consiste à produire des images consistantes afin que les personnages ou objets reproduits sur plusieurs diapositives soient quasi-identiques:
   - Nous avons créé un "méta-prompt" qui à partir d'un descriptif simple <situation> fournit des images consistantes:
   - Méta-prompt:
