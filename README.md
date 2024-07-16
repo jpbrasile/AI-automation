@@ -21,6 +21,9 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- 🛠️ [Poe](https://poe.com/) ✅ |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
 |- ⬜ : 🛠️ à évaluer (20)  |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
 |- ⚙️: LearnAnything (22) 💡 | - ⚙️: Text to Graph (23) 💡   |- ⬜ : RAG to Graph     |
+|- ⚙️ : API de calcul scientifique (24) 💡 ||- ⬜ : Déploiement du chatbot (25)      |     |
+
+
 
 
 
@@ -374,6 +377,9 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 12. **Exemple de prompting**
 - **Parler la langue du LLM:** : Un LLM peut comprendre des instructions concises et structurées, mais ill a tendance à ce mettre à la place ds humains en étant souvent un peu trop verbeux. Voilà comment s'y adapter `donne les <directives> permettant d'opérer ces adaptations par rapport à la configuration initiale sous forme de string :"""<directives>""" destiné à être pris en compte par un LLM et pas un humain (donc <directives> compactes et structurées`
 - ⚙️: [**Prompt pour cloner un custom GPT**](https://www.youtube.com/watch?v=DPl46_9WCi0)
+- On peut faire des mises en forme sophistiquées avec sonnet 3.5 et artefact : ainsi avec le prompt peux tu me décrire la cigale et la fourmi avec un jeu d'émoji et la signification en anglais à côté de chaque phrase. Fais le avec React car les emooji doivent être 3 fois plus grand que le texte . 4 émoji par phrase`` on obtient:
+
+  <img src="https://github.com/user-attachments/assets/b8b5c938-7be3-425e-80c4-3f347cbc2175" width="50%">
 
 13. **Traitement d'images** : Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module:
 - Trouver [controlnet-union-sdxl-1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0) sur HuggingFace
@@ -403,6 +409,40 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 - ⬜ [**local et infini**](https://www.youtube.com/watch?v=5xPvsMX2q2M)
 - ⬜  : [**Tutorial pour interagir avec les data en python**](https://github.com/projectwilsen/KnowledgeGraphLLM/tree/main/tutorial). [Video YouTube](https://youtu.be/ky8LQE-82xs?si=fBtFkNnRC5BsJHaj)
 - ⬜  : [**GraphRAG**](https://youtu.be/6Yu6JpLMWVo?si=i2pk2P7yP60Q0-LM)
+-  ✅ : comparaison d'e l'analyse d'un document par [**sonnet**](https://claude.ai/chat/ad5d814e-8723-4d9d-b85e-f1da95ce1150) , [**perplexity**](https://www.perplexity.ai/search/dis-moi-ce-que-tu-penses-du-do-rOeCbqOfTqu90EG_HRlomQ) et [**NotebookLM**](https://notebooklm.google.com/notebook/96ec78de-aa3a-446f-9800-257520648ad9?_gl=1*1igqfq9*_ga*MTQzNTk3OTMyOS4xNzIxMTEyNTAx*_ga_W0LDH41ZCB*MTcyMTExMjUwMC4xLjAuMTcyMTExMjUwMC42MC4wLjA.&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1)
+-  [**NotebookLM**](https://notebooklm.google/) est particulièrement intéresssant pour absorber une masse considérable de documents et y répondre suivant divers critères 
+    - 🌟 **Intérêt de NotebookLM :**
+          • 🧠 Assistant IA personnalisé pour vos documents
+          • 📚 Analyse et synthèse intelligente des sources
+          • 🔍 Recherche avancée avec citations précises
+          • ✍️ Aide à la rédaction et génération d'idées
+      
+    - 🛠️ **Cheat Sheet NotebookLM :**
+          •📥 Sources compatibles :
+          • 📄 Google Docs
+          • 📊 Google Slides
+          • 🌐 URL web
+          • 📑 PDF
+          • 📝 Fichiers texte
+      
+    - 💡 **Fonctionnalités clés :**
+          • 📓 Création de notebooks thématiques
+          • 🔎 Analyse automatique des documents
+          • 📋 Génération de résumés et guides
+          • ❓ Questions-réponses sur le contenu
+          • 🔗 Citations avec liens vers les sources
+      
+    - 🚀 **Conseils d'utilisation :**
+          • 🎯 Commencer par un projet spécifique
+          • 📚 Importer des sources variées
+          • 💼 Utiliser pour recherche, analyse, rédaction
+          • ✅ Vérifier les citations pour plus de fiabilité
+      
+    - 🌐 **Disponibilité :**
+          • 🌍 200+ pays et territoires
+          • 🆓 Gratuit (actuellement)
+          • 🔑 Nécessite un compte Google
+      
 17. ⚙️ [**Détection d'objets automatique avec Sonnet**](https://youtu.be/u-glnHI4zCY?si=GOxoN7xGd6C4k9eq)
 18.   ✅ **PC distant** : [Replicate](https://replicate.com/) : permet l'accès à des ressources (comme [la création d'images](https://replicate.com/bytedance/sdxl-lightning-4step/api) via des API ou playground :essais gratuit puis coût suivant le temps passé
 19. *text to speech** 
@@ -451,6 +491,29 @@ Le résultat est tout à fait correct :
 - Enfin le résultat ainsi obtenu peut être généralisé et adapté à des cas plus complexes [en spécifiant les agents susceptibles d'y parvenir](https://claude.site/artifacts/3e3e1c14-d880-44b9-aa79-05bdcefa4bc0).
 - La mise en oeuvre de ces prompts pour expliquer l'orchestration des agents en charge de la production du graphe - sans agent - et donc directement avec Sonnet 3.5 donne [des résultats qui pourraient être améliorés mais qui sont néanmoins très corrects](https://claude.site/artifacts/05390ce0-4167-4330-abdb-eb2c8915cd75)
 
-
+24. **API scinetifique**
+- ⚙️ : On peut s'inspirer de cet [exemple qui fonctionne côté client](https://www.lgstoolkit.com/apps/trusses/). En particulier les jumeaux numériques devraintt permettre d'adapter cette approche pour même pour des simulations complexes 💡.  
+25.⬜  :  **Déploiement du chatbot** avec [**pmfm**](pmfm.ai)
+-  🤖 Créer son assistant IA personnel sans coder
+- 🚀 Lancer rapidement son chatbot sur internet
+- 💬 Discuter avec ses clients 24h/24 et 7j/7
+ -💰 Gagner de l'argent avec son assistant IA (plans payants)
+- 🎨 Personnaliser l'apparence de son chatbot
+- 📊 Voir qui utilise son assistant et comment
+- 🌐 Avoir son propre site web pour son IA (plans payants)
+- 📱 Utiliser son assistant sur ordinateur et mobile
+- 📢 Faire connaître son entreprise grâce à l'IA
+- 🔒 Héberger son assistant en toute sécurité
+- 🔍 Être mieux trouvé sur internet
+- 🆓 Essayer gratuitement (50 messages/mois)
+- 💼 Avoir plus de fonctionnalités en payant
+- 🔄 Profiter des dernières nouveautés
+- 👥 Rejoindre une communauté de créateurs
+- 🛒 Utiliser l'IA pour l'e-commerce
+- 🏥 Créer un assistant santé
+- 🛍️ Aider les clients dans les magasins
+- 📚 Faire un assistant pour réviser ses cours
+- 💼 Préparer des entretiens d'embauche
+- 🌟 Lancer sa propre entreprise basée sur l'IA
 
 
