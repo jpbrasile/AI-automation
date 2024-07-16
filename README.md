@@ -433,7 +433,8 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 - Nous allons tenter le no code avec LangGraph pour répondre à notre besoin dans un nouveau [dialogue avec Sonnet 3.5](https://claude.ai/chat/c9a4a45f-0e90-43ac-a305-867cef5f2793). Malheureusement il donne un code non cohérent avec la réalité de LangGraph car il refuse de faire des recherches sur le net. Nous nous sommes donc reporté sur [Perplexity](https://www.perplexity.ai/search/detaille-langgraph-promptnode-PeOQJBUAT9mAJRrp.vjg5g).
 - Nous revenons sur [sonnet 3.5 avec le code proposé par Perplexity](https://claude.ai/chat/c9a4a45f-0e90-43ac-a305-867cef5f2793) pour générer le code dont voici la structure 
   <img src="https://github.com/user-attachments/assets/2fa4a265-ce1d-4086-b1c6-e89a079ad8f0" width="50%">
-- Il ne ns restera plus qu'à valider le code avec l'aide d'AIDER
+- Il ne ns restera plus qu'à valider le code avec l'aide d'AIDER. Nous utilisons l'environnement conda "learnanything" qui permet l lancement de aider en tpant simplement dans un terminal `aider`
+- Nous avons lancé les divers tests avec l'aide d'aider qui proposait des changements si nécessaire. [Sonnet 3.5 fait la synthèse](https://claude.ai/chat/c2ad00e6-187f-4bae-aae5-7e13b2b3ac7a) 
 
         
 23. **Text to Graph**: Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter la lisibilité au détriment de nouvelles interventions manuelles.
