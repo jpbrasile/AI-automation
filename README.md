@@ -4,10 +4,10 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |        |        |  |
 |-------------------|-------------------|-------------------|
 | - Prompting (12) ⚙️| - Site web sur Github (7) ✅      | Traitement d'images(13)  ⚙️ |
-| - 🛠️ Docker  ✅| - Simple API locale (1) ✅      | Speech to text via python ⬜ |
+| - 🛠️ Docker  ✅| - Simple API locale (1) ✅      | Speech to text  ⬜ (30)|
 | - 🛠️[Github](https://github.com/) (10) ✅| -  (5)Programmation no code (AIDER ✅), (MicroAgent ⬜)     |- Web scrapping via python (11) ⚙️      |
 | - 🛠️ GPT-4o ✅ et [playground](https://platform.openai.com/playground/chat?models=gpt-4o)| -  🛠️ LM Studio ✅       |- RAG  (16)  ⚙️     |
-| - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python: payant(3. ✅) et gratuit local(19. ⬜)     |-  GPTs  ⬜  |
+| - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python: payant(3. ✅) et gratuit (19. ⬜)     |-  GPTs  ⬜  |
 | - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ⚙️       |-  Agents (21) ⬜  |
 | - 🛠️ Comfyui   ✅| - ⬜:  Tutoriel video automatique     |- Function calling (Gorilla) ⬜   |
 | - 🛠️ Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
@@ -19,11 +19,10 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- 🛠️VS studio ✅ |- 🛠️ Kaggle ✅   |- 🛠️ Colab  ✅  |
 |- Caractères consistants (14) ⚙️ |-  Apprendre de façon active (15) ⚙️  |- ⚙️ Détection automatique avec Sonnet (17)  |
 |- 🛠️ [Poe](https://poe.com/) ✅ |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
-|- ⬜ : 🛠️ à évaluer (20)  |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
+|- ⬜ : 🛠️ à évaluer (20)  |-⬜ : Fabrication low cost (26)  |- ⬜ : Avatar parlant ou chantant gratuit (28)  |
 |- ⚙️: LearnAnything (22) 💡 | - ⚙️: Text to Graph (23) 💡   |- ⬜ : RAG to Graph     |
-|- ⚙️ : API de calcul scientifique (24) 💡 ||- ⬜ : Déploiement du chatbot (25)      |     |
-
-
+|- ⚙️ : API de calcul scientifique (24) 💡 |- ⬜ : Déploiement du chatbot (25)      |  Voice assistant multimodal (27)   |
+|- ⬜ : [OpenedAI Vision (~ GPT4-vision)](https://www.youtube.com/watch?v=61F_4zfs_Jg)|- ⬜ : Viva : traitement images et video (31)   |-  |
 
 
 
@@ -46,9 +45,17 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 ## Les incontournables utilisables sans rien automatiser. 
 
 - [Mieux vaut regarder les benchmarks pour choisir](https://klu.ai/glossary/mmlu-pro-eval)
-<img src="https://github.com/jpbrasile/AI-automation/assets/8331027/57f69c6d-9505-4b23-82a7-eee9025e392e" width="600" />
-  - ⬜ : [QWEN2](https://qwenlm.github.io/blog/qwen2/) est semble-t-il très performant (128 k de contexte) ainsi que [gemma2](https://artificialanalysis.ai/models/gemma-2-9b)
+<img src="https://github.com/jpbrasile/AI-automation/assets/8331027/57f69c6d-9505-4b23-82a7-eee9025e392e" width="600" >
 
+  - ⬜ :
+  
+    - [QWEN2](https://qwenlm.github.io/blog/qwen2) est semble-t-il très performant (128 k de contexte)
+
+    -  [gemma2](https://artificialanalysis.ai/models/gemma-2-9b)
+      
+    -  ![image](https://github.com/user-attachments/assets/7e4a4f2d-373b-437e-82dd-dcfc22d4df21)
+
+    -  Mise en oeuvre des modèles locaux avec [HuggingFace candle](https://www.youtube.com/watch?v=8hpYedvjrxE) : Ultra-rapide, développé en Rust  
 
 
 - Donc utiliser **Sonnet 3.5** et **GPT-4o** pour avoir les meilleures réponses à nos questions.
@@ -124,6 +131,7 @@ Claude dit: [TextBlock(text='Bonjour !', type='text')]
     - Ajoute des transitions entre les diapositives.
   - Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
 ⚙️ : [**Text to video de longue durée**](https://video-infinity.tanzhenxiong.com/) en open source
+- [Rajout d'effet spéciaux sonores](https://github.com/open-mmlab/FoleyCrafter):FoleyCrafter: Bring Silent Videos to Life with Lifelike and Synchronized Sounds
 
 4. **Point d'étape:**
 - Nous avons réussi à mettre en oeuvre une applicatoin complexe sans coder une seule ligne. Cependant ce faisant nous avons détecté des pistes pour augmenter encore notre productivité
@@ -292,8 +300,9 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
   	Cette commande supprime le fichier du repository Git sans le supprimer de votre système de fichiers local.
   - Pour récupérer en local des modifications faites sur Github: `git pull origin main`
 
-11. **Web scraping via python** 
-  -[**GPT Researcher**](https://docs.gptr.dev/docs/gpt-researcher/introduction) est un équivalent à Perplexica
+11. **Web scraping**:
+  - ⬜ :[Les outils de web scraping 2024](https://youtu.be/od6AaKhKYmg?si=bol1exHiamBqdTmH)  :**Jina AI Reader API**, Mendable Firecrawl, and Crawl4AI and More"
+  - [**GPT Researcher**](https://docs.gptr.dev/docs/gpt-researcher/introduction) est un équivalent à Perplexica
 
     - L'adaptation de ce logiciel pour utiliser les LLM Antropic (sonnet 3.5 et Haiku) a été faite.
     - Il faut conserver l'abonnemment à openai pour la création de l'embedding 
@@ -380,8 +389,11 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 - On peut faire des mises en forme sophistiquées avec sonnet 3.5 et artefact : ainsi avec le prompt peux tu me décrire la cigale et la fourmi avec un jeu d'émoji et la signification en anglais à côté de chaque phrase. Fais le avec React car les emooji doivent être 3 fois plus grand que le texte . 4 émoji par phrase`` on obtient:
 
   <img src="https://github.com/user-attachments/assets/b8b5c938-7be3-425e-80c4-3f347cbc2175" width="50%">
-
-13. **Traitement d'images** : Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module:
+- ⬜: [**Gestion de projet**](https://www.youtube.com/watch?v=rbVTTZPbGfw) automatisée de sa création,WBS,Gantt, Mail ciblés ... avec le bon prompting et l'artefacts de Sonnet
+- ⬜ 💡 : Généraliser le concept précédent avec les script de l'auteur de la vidéo précédente et déployer les applications correspondantes sur [pmfm](pmfm.ai)
+13. **Traitement d'images** :
+- [Upscaling](https://flowt.ai/community/supir-v2-plugandplay-edition-n5acf-v) 
+- Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module:
 - Trouver [controlnet-union-sdxl-1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0) sur HuggingFace
 - ⚙️: [Un tutorial nécessaire pour la prise en main de ComfyUi](https://www.youtube.com/watch?v=zpJQUw_0lBI)  
 - L'installation sur ComfyUI n'est pas encore acquise mais il nous est possible d'utiliser [un espace HF qui le met en &#339;uvre](https://huggingface.co/spaces/Deadmon/union-sdxl):
@@ -409,6 +421,7 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 - ⬜ [**local et infini**](https://www.youtube.com/watch?v=5xPvsMX2q2M)
 - ⬜  : [**Tutorial pour interagir avec les data en python**](https://github.com/projectwilsen/KnowledgeGraphLLM/tree/main/tutorial). [Video YouTube](https://youtu.be/ky8LQE-82xs?si=fBtFkNnRC5BsJHaj)
 - ⬜  : [**GraphRAG**](https://youtu.be/6Yu6JpLMWVo?si=i2pk2P7yP60Q0-LM)
+- ⬜  : [**GraphRAG en local avec Groq, recherches  locale et globale**](https://youtu.be/xkDGpR5g9D0?si=fNW3yN-VV9K0-BZF)
 -  ✅ : comparaison d'e l'analyse d'un document par [**sonnet**](https://claude.ai/chat/ad5d814e-8723-4d9d-b85e-f1da95ce1150) , [**perplexity**](https://www.perplexity.ai/search/dis-moi-ce-que-tu-penses-du-do-rOeCbqOfTqu90EG_HRlomQ) et [**NotebookLM**](https://notebooklm.google.com/notebook/96ec78de-aa3a-446f-9800-257520648ad9?_gl=1*1igqfq9*_ga*MTQzNTk3OTMyOS4xNzIxMTEyNTAx*_ga_W0LDH41ZCB*MTcyMTExMjUwMC4xLjAuMTcyMTExMjUwMC42MC4wLjA.&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1)
 -  [**NotebookLM**](https://notebooklm.google/) est particulièrement intéresssant pour absorber une masse considérable de documents et y répondre suivant divers critères 
     - 🌟 **Intérêt de NotebookLM :**
@@ -448,9 +461,11 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 19. *text to speech** 
   - ⬜  : [text to speech local et gratuit](https://www.youtube.com/watch?v=N0UrOr6LBkw)
   - ⬜  : [alltalk_tts](https://github.com/erew123/alltalk_tts)
+  - 🛠️ : [ttsopenai](https://ttsopenai.com/) : l'équivalent gratuit d'elevenlabs 
 20. ⬜ : A évaluer [Invideo](https://invideo.io/i/samsonvowles), [Replicate](https://replicate.com/), [Live-portrait](https://replicate.com/fofr/ve-portrait), [Toon crafter]https://replicate.com/fofr/tooncrafter), [Oldify](https://replicate.com/arielreplicate/oldify), [Pixverse](https://app.pixverse.ai/),[Pika](https://pika.art/), [Filmora](https://filmora.wondershare.net), [fooocus api](https://replicate.com/konieshadow/fooocus-api/api), [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main)
 21. **Agent**:
 - ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)
+- ⬜  : [Internet of Agents](https://github.com/OpenBMB/IoA) : Pourrait conduire à une IA incontrôlable en raison de plusieurs facteurs. Premièrement, l'automatisation et l'orchestration avancées permettent à l'IA de prendre des décisions et de former des équipes sans intervention humaine constante. Deuxièmement, la capacité de ces systèmes à manipuler et interpréter d'énormes quantités de données hétérogènes pourrait leur donner un accès à des informations sensibles et critiques. Troisièmement, la collaboration dynamique entre divers agents autonomes pourrait entraîner des comportements émergents imprévus et non supervisés. Quatrièmement, ces agents peuvent utiliser divers outils de manière autonome, amplifiant leur capacité à interagir avec le monde réel sans supervision. Enfin, la capacité de ces agents à apprendre et à s'adapter en temps réel pourrait les rendre de plus en plus autonomes, échappant ainsi au contrôle humain. Si ces systèmes ne sont pas correctement encadrés et surveillés, ils pourraient potentiellement prendre des décisions ou des actions qui échappent à la compréhension et au contrôle de leurs créateurs.
 22. **Learn AnyThing**:
 - "Learn anything" est capable de partir de données obtenues par web scraping ou de données locales multimodales. Les images peuvent être interprétées, et les données graphiques et tableaux sont récupérés et intégrés dans les graphes de connaissance. Cette fonctionnalité permet d'enrichir les graphes avec des informations actualisées et diversifiées, provenant de différentes sources.
 - La connaissance peut être organisée de manière efficace sous forme de graphe, comme illustré dans l'image ci-dessous :
@@ -477,7 +492,10 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 - Nous avons lancé les divers tests avec l'aide d'aider qui proposait des changements si nécessaire. [Sonnet 3.5 fait la synthèse](https://claude.ai/chat/c2ad00e6-187f-4bae-aae5-7e13b2b3ac7a) 
 
         
-23. **Text to Graph**: Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter la lisibilité au détriment de nouvelles interventions manuelles.
+23. **Text to Graph**:
+- ⬜ :  [Un tutoriel pour chatter avec un  Knowledge Graph using LLMs](https://www.youtube.com/watch?v=KMXQ4SVLwmo)
+- ⬜ :  [GraphFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) : RAGFlow propose une extraction de connaissances à partir de données non structurées et complexes, prend en charge le chunking intelligent, offre des citations ancrées avec une visualisation des références, et supporte divers formats de données, y compris les graphiques. Il facilite un flux de travail RAG automatisé et configurable, adapté à toutes les entreprises, avec des API intuitives pour une intégration facile.
+- Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter la lisibilité au détriment de nouvelles interventions manuelles.
 
 Un LLM de bon niveau peut quant'à lui prendre en compte directement le besoin exprimé par l'opérateur et générer automatiquement un graphe représentatif qu'il soumet à l'opérateur. De plus le LLM peut modifier, expliquer et utiliser ce graphe en fonction du contexte et de la demande de l'opérateur. On a donc l'avantage d'une représentation visuelle efficace sans en payer le prix.
 
@@ -493,7 +511,7 @@ Le résultat est tout à fait correct :
 
 24. **API scinetifique**
 - ⚙️ : On peut s'inspirer de cet [exemple qui fonctionne côté client](https://www.lgstoolkit.com/apps/trusses/). En particulier les jumeaux numériques devraintt permettre d'adapter cette approche pour même pour des simulations complexes 💡.  
-25.⬜  :  **Déploiement du chatbot** avec [**pmfm**](pmfm.ai)
+25. ⬜  :  **Déploiement du chatbot** avec [**pmfm**](pmfm.ai)
 -  🤖 Créer son assistant IA personnel sans coder
 - 🚀 Lancer rapidement son chatbot sur internet
 - 💬 Discuter avec ses clients 24h/24 et 7j/7
@@ -516,4 +534,15 @@ Le résultat est tout à fait correct :
 - 💼 Préparer des entretiens d'embauche
 - 🌟 Lancer sa propre entreprise basée sur l'IA
 
+26. ⬜  : **Fabrication low cost**:
+- [Robot low cost](https://youtu.be/F7IjlE9MfJU?si=uduz-vRK8YOe4bfc)
+- [Imprimante SLS DIY]( https://sls4all.com/store/)
 
+27. ⬜  : [**Voice assistant multimodal**](https://youtu.be/pi6gr_YHSuc?si=fffk2BoXy-qdY-Im)  avec ChatGPT-4o, Groq, Llama3, OpenAI-TTS & Faster-Whisper
+-  ⬜  : [MOSHY](https://www.youtube.com/watch?v=AuXNiQvoe6g)
+-  ⬜  : [Accessible via un code python](https://www.youtube.com/watch?v=w5unVTO7mLQ)         
+29. ⬜  : [**Avatar parlant ou chantant gratuit**](https://github.com/fudan-generative-vision/hallo?tab=readme-ov-file) : Bluffant ! 
+   - ⬜  : [**Avatar parlant avec CompfyUI**](https://www.youtube.com/watch?v=IOCA6ncJC6k) : Un classique, mais la mode passe vite dans l'IA. Sans installation locale on peut aussi [le mettre en oeuvre directement dans Kaggle](https://www.youtube.com/watch?v=pvGhSfsi1Ys) 
+30.  ⬜  : [**Transcription audio de réunion en local**](https://github.com/JuergenFleiss/aTrain) : multilangue et identifie les participants, open source
+31.  ⬜ : [**Viva : traitement images et video**]( https://vivago.ai/home) : Gratuit, Viva propose une gamme de fonctionnalités comprenant Texte en Vidéo, Amélioration de Vidéo, Image en Vidéo, Pinceau Magique (nouveau), Texte en Image, Image en Texte, Amélioration d'Image, Remplacement IA, Gomme Magique, Extension Magique et Texte en 3D (nouveau).
+  - [Face Swap Any Video](https://youtu.be/XwaLYUjWaEg?si=JtLFSmNSP4jJ4kTy)
