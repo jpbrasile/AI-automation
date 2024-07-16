@@ -302,6 +302,10 @@ Forest_trail_1 in a lush, shadowy woodland with dappled sunlight. Man_1 (45 year
 
 11. **Web scraping**:
   - ⬜ :[Les outils de web scraping 2024](https://youtu.be/od6AaKhKYmg?si=bol1exHiamBqdTmH)  :**Jina AI Reader API**, Mendable Firecrawl, and Crawl4AI and More"
+  - [Storm](https://github.com/stanford-oval/storm): STORM est open source et muni de vision (GPT4-o) : il écrit des articles comme Wikipedia à partir de rien mais il s'informe via Internet. On peut le tester [ici 🛠️](https://storm.genie.stanford.edu/)
+
+
+Try out our live research preview to see how STORM can help your knowledge exploration journey and please provide feedback to help us improve the system 🙏!
   - [**GPT Researcher**](https://docs.gptr.dev/docs/gpt-researcher/introduction) est un équivalent à Perplexica
 
     - L'adaptation de ce logiciel pour utiliser les LLM Antropic (sonnet 3.5 et Haiku) a été faite.
