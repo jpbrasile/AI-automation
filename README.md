@@ -488,13 +488,13 @@ Try out our live research preview to see how STORM can help your knowledge explo
     - _Analyse des données d'apprentissage_ : Utiliser des analyses de données pour identifier les points faibles et proposer des plans d'amélioration personnalisés.
     - _Gamification_ : Introduire des éléments de gamification pour rendre l'apprentissage plus engageant et motivant.
     - _Feedback en temps réel_ : Fournir des retours en temps réel sur les performances de l'utilisateur pour un apprentissage plus réactif.
-- Suite à un [dialogue avec Perplexity](https://www.perplexity.ai/search/what-is-the-interest-of-llama-6lm_fKVKQqeLarBCK0Z30g) à qui nous avons d'abord demandé d'analyser les performances du framework _llama-index agent_ , notre choix se porte sur langchain
+- Voir la fin du [dialogue avec Perplexity](https://www.perplexity.ai/search/what-is-the-interest-of-llama-6lm_fKVKQqeLarBCK0Z30g) qui nous a orienté sur l'emploi de LangChain dau dépend de notre idée initiale  (_llama-index agent_). 
 - Nous allons tenter le no code avec LangGraph pour répondre à notre besoin dans un nouveau [dialogue avec Sonnet 3.5](https://claude.ai/chat/c9a4a45f-0e90-43ac-a305-867cef5f2793). Malheureusement il donne un code non cohérent avec la réalité de LangGraph car il refuse de faire des recherches sur le net. Nous nous sommes donc reporté sur [Perplexity](https://www.perplexity.ai/search/detaille-langgraph-promptnode-PeOQJBUAT9mAJRrp.vjg5g).
 - Nous revenons sur [sonnet 3.5 avec le code proposé par Perplexity](https://claude.ai/chat/c9a4a45f-0e90-43ac-a305-867cef5f2793) pour générer le code dont voici la structure 
   <img src="https://github.com/user-attachments/assets/2fa4a265-ce1d-4086-b1c6-e89a079ad8f0" width="50%">
-- Il ne ns restera plus qu'à valider le code avec l'aide d'AIDER. Nous utilisons l'environnement conda "learnanything" qui permet l lancement de aider en tpant simplement dans un terminal `aider`
+- Il ne ns restera plus qu'à valider le code avec l'aide d'AIDER. Nous utilisons l'environnement conda "learnanything" qui permet le lancement de aider en tapant simplement dans un terminal `aider`
 - Nous avons lancé les divers tests avec l'aide d'aider qui proposait des changements si nécessaire. [Sonnet 3.5 fait la synthèse](https://claude.ai/chat/c2ad00e6-187f-4bae-aae5-7e13b2b3ac7a) 
-
+- Ma conclusion est que l'activation d'agents est possible, mais très lente et relativement coûteuse. Nous avons probablement aussi exagéré sur le nombre d'agents à mettre en oeuvre. Il faut mieux que le traitement de la requ^te initiale soit priseen compte par un seul LLM  qui , avec le bon prompt peut produire le graphe ainsi que l'artefact qui permet sa visualisation. Le LLM maîtrise la cohérence d'ensemble et peut donc facilement adapter le résultat à des adaptations souhaitée par l'utilisateur. 
         
 23. **Text to Graph**:
 - ⬜ :  [Un tutoriel pour chatter avec un  Knowledge Graph using LLMs](https://www.youtube.com/watch?v=KMXQ4SVLwmo)
