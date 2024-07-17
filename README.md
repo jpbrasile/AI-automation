@@ -622,7 +622,7 @@ Le résultat est tout à fait correct :
     • 🛠️ Créer vos propres prompts personnalisés pour des besoins spécifiques
     • 🗣️ Interagir par commandes vocales ou interface en ligne de commande
     • 🔗 S'intégrer avec d'autres outils comme Obsidian pour la prise de notes
-- [vectorShift](https://vectorshift.ai/) : Un écosystème pour concevoir, déployer et gérer des applications d'IA en no code
+- [vectorShift](https://vectorshift.ai/) : Un écosystème pour concevoir, déployer et gérer des applications d'IA en no code. [Découvrez](https://www.youtube.com/watch?v=Pjdnq-WcDHQ) comment créer un chatbot d'IA en utilisant VectorShift, capable de rechercher et de répondre aux requêtes basées sur le contenu de votre site web !
 
 33. **Comment améliorer les performances d'un LLM**:
     
