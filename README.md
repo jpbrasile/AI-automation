@@ -22,7 +22,7 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- ⬜ : 🛠️ à évaluer (20)  |-⬜ : Fabrication low cost (26)  |- ⬜ : Avatar parlant ou chantant gratuit (28)  |
 |- ⚙️: LearnAnything (22) 💡 | - ⚙️: Text to Graph (23) 💡   |- ⬜ : RAG to Graph     |
 |- ⚙️ : API de calcul scientifique (24) 💡 |- ⬜ : Déploiement du chatbot (25)      |  Voice assistant multimodal (27)   |
-|- ⬜ : [OpenedAI Vision (~ GPT4-vision)](https://www.youtube.com/watch?v=61F_4zfs_Jg)|- ⬜ : Viva : traitement images et video (31)   |-  |
+|- ⬜ : [OpenedAI Vision (~ GPT4-vision)](https://www.youtube.com/watch?v=61F_4zfs_Jg)|- ⬜ : Traitement images et video (31)   |-  |
 | - ⬜ : Automatisation de tâches via API (32) |  |  |
 
 
@@ -568,6 +568,7 @@ Le résultat est tout à fait correct :
 26. ⬜  : **Fabrication low cost**:
 - [Robot low cost](https://youtu.be/F7IjlE9MfJU?si=uduz-vRK8YOe4bfc)
 - [Imprimante SLS DIY]( https://sls4all.com/store/)
+- [text to real 3D part](https://chatgpt.com/c/847ba680-fd83-4ed7-bd0b-84a2d75f0f67) 
 
 27. ⬜  : [**Voice assistant multimodal**](https://youtu.be/pi6gr_YHSuc?si=fffk2BoXy-qdY-Im)  avec ChatGPT-4o, Groq, Llama3, OpenAI-TTS & Faster-Whisper
 -  ⬜  : [MOSHY](https://www.youtube.com/watch?v=AuXNiQvoe6g)
@@ -577,6 +578,21 @@ Le résultat est tout à fait correct :
 30.  ⬜  : [**Transcription audio de réunion en local**](https://github.com/JuergenFleiss/aTrain) : multilangue et identifie les participants, open source
 31.  ⬜ : [**Viva : traitement images et video**]( https://vivago.ai/home) : Gratuit, Viva propose une gamme de fonctionnalités comprenant Texte en Vidéo, Amélioration de Vidéo, Image en Vidéo, Pinceau Magique (nouveau), Texte en Image, Image en Texte, Amélioration d'Image, Remplacement IA, Gomme Magique, Extension Magique et Texte en 3D (nouveau).
   - [Face Swap Any Video](https://youtu.be/XwaLYUjWaEg?si=JtLFSmNSP4jJ4kTy)
+  - Édition et génération vidéo simplifiées et améliorées :[Motion Follower, Easy Animate et Uni Animate](https://chatgpt.com/share/3230e7bc-3f2c-46e1-8d76-20e9468eb2f0)
+
+      **MotionFollower : Édition de mouvement vidéo par IA**
+      [En savoir plus](https://francis-rings.github.io/Motio...)
+      Avez-vous déjà souhaité pouvoir transférer des mouvements d'une vidéo à une autre de manière transparente ? MotionFollower est là pour réaliser vos rêves ! Ce modèle d'IA de pointe vous permet de transférer les mouvements d'une vidéo source à votre protagoniste, tout en préservant l'arrière-plan et l'apparence originaux. Avec son pose controller, reference controller, score-guided diffusion et son architecture efficace, MotionFollower surpasse les autres modèles en termes d'utilisation de la mémoire GPU et de gestion des arrière-plans complexes et des mouvements de caméra.
+      
+      **EasyAnimate : Génération avancée de vidéos par IA**
+      [En savoir plus](https://github.com/aigc-apps/EasyAnimate)
+      Préparez-vous à être époustouflé par EasyAnimate, un modèle d'IA avancé développé par les brillants esprits du groupe Alibaba. En utilisant l'architecture Transformer et le cadre Diffusion Transformer, EasyAnimate peut générer des vidéos de haute performance et de longue durée avec des transitions de mouvement fluides. Sa polyvalence, son approche Slice VAE et son écosystème holistique le rendent adapté à diverses applications, des images aux vidéos. Ce modèle d'IA établit une nouvelle norme en matière de génération de vidéos par IA et ouvre des possibilités infinies pour les créateurs.
+      
+      **UniAnimate : Animation d'images humaines réalistes**
+      [En savoir plus](https://unianimate.github.io/)
+      [GitHub](https://github.com/ali-vilab/UniAnimate)
+      UniAnimate est le révolutionnaire de l'animation d'images humaines que vous attendiez ! Avec son modèle de diffusion vidéo unifié, UniAnimate peut animer une seule image de référence basée sur une séquence de poses cibles, produisant des vidéos étonnamment réalistes. L'entrée de bruit unifiée du modèle et la modélisation temporelle efficace assurent des transitions fluides et une gestion efficace des séquences plus longues. Les résultats de synthèse supérieurs d'UniAnimate et sa capacité de transfert inter-domaines en font le modèle d'IA incontournable po
+
 32. **Automatisation de tâches**
 - [Fabric](https://github.com/danielmiessler/fabric)
   - Voici une liste des principales fonctionnalités de Fabric, le framework open-source d'IA :
