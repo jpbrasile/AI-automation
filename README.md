@@ -8,7 +8,7 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 | - 🛠️[Github](https://github.com/) (10) ✅| -  (5)Programmation no code (AIDER ✅), (MicroAgent ⬜)     |- Web scrapping via python (11) ⚙️      |
 | - 🛠️ GPT-4o ✅ et [playground](https://platform.openai.com/playground/chat?models=gpt-4o)| -  🛠️ LM Studio ✅       |- RAG  (16)  ⚙️     |
 | - 🛠️ Anthropic [chat](https://claude.ai/new) & [API](https://www.anthropic.com/api-bk) (Sonnet 3.5) ✅| - Text to speech via python: payant(3. ✅) et gratuit (19. ⬜)     |-  GPTs  ⬜  |
-| - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo via python (3)    ⚙️       |-  Agents (21) ⬜  |
+| - 🛠️[Perplexity](https://www.perplexity.ai/)   ✅|- Text to vidéo et traitements (3)    ⚙️       |-  Agents (21) ⬜  |
 | - 🛠️ Comfyui   ✅| - ⬜:  Tutoriel video automatique     |- Function calling (Gorilla) ⬜   |
 | - 🛠️ Copilot ✅| -  Création d'images consistantes  ✅    |- Text to CAD (9) ⚙️      |
 | - 🛠️ Anaconda ✅| - Création de tutoriel vidéo  ✅       |- Serveur local ⬜    |
@@ -21,9 +21,9 @@ __***Avec le monde d'avant l'IA on apprenait à faire puis on faisait. Avec le m
 |- 🛠️ [Poe](https://poe.com/) ✅ |-  🛠️ Web Apps by [123apps](https://123apps.com/) :Edit, Convert, Create |- 🛠️ [VAPI](https://docs.vapi.ai/introduction) : your remote phone assistant |
 |- ⬜ : 🛠️ à évaluer (20)  |-⬜ : Fabrication low cost (26)  |- ⬜ : Avatar parlant ou chantant gratuit (28)  |
 |- ⚙️: LearnAnything (22) 💡 | - ⚙️: Text to Graph (23) 💡   |- ⬜ : RAG to Graph     |
-|- ⚙️ : API de calcul scientifique (24) 💡 |- ⬜ : Déploiement du chatbot (25)      |  Voice assistant multimodal (27)   |
+|- ⚙️ : API de calcul scientifique (24) 💡 |- ⬜ : Déploiement du chatbot (25)      | Bot assistant multimodal (27)   |
 |- ⬜ : [OpenedAI Vision (~ GPT4-vision)](https://www.youtube.com/watch?v=61F_4zfs_Jg)|- ⬜ : Traitement images et video (31)   |-  |
-| - ⬜ : Automatisation de tâches via API (32) |  |  |
+| - ⬜ : Automatisation de tâches (32) | Amélioration des performances d'un LLM (33)  |  |
 
 
 
@@ -57,6 +57,11 @@ L'idée est de construire pas à pas une "baquette magique" apte à tout faire. 
 
     -  Mise en oeuvre des modèles locaux avec [HuggingFace candle](https://www.youtube.com/watch?v=8hpYedvjrxE) : Ultra-rapide, développé en Rust  
 
+- Pour les maths et le raisonnement en local : [mathstral](https://mistral.ai/news/mathstral/)
+![image](https://github.com/user-attachments/assets/50f68eed-55ce-411c-8878-31c09fbcd57a)
+
+- Codestral Mamba, de Mistral AI, est un modèle innovant qui peut traiter les séquences rapidement, quelle que soit leur longueur, capable de gérer jusqu'à 256k tokens avec des performances équivalentes aux modèles transformateurs de pointe, particulièrement efficace pour les applications de productivité de code
+<img src="https://github.com/user-attachments/assets/146d165a-645a-453b-b9d5-f2f671c3c2f6" width="70%">
 
 - Donc utiliser **Sonnet 3.5** et **GPT-4o** pour avoir les meilleures réponses à nos questions.
 - [**Perplexity**](https://www.perplexity.ai/) est un autre incontournable pour surfer sur le web ( que nous contournerons quand même plus tard ! 😊)
@@ -132,7 +137,7 @@ Claude dit: [TextBlock(text='Bonjour !', type='text')]
   - Le projet utilise Python avec diverses bibliothèques (BeautifulSoup, Requests, Pillow, MoviePy) et APIs (Anthropic, OpenAI). Cette approche intégrée offre une solution complète et efficace pour la production automatisée de contenu vidéo éducatif, de la conversion du texte à la création de la vidéo finale.
 ⚙️ : [**Text to video de longue durée**](https://video-infinity.tanzhenxiong.com/) en open source
 - [Rajout d'effet spéciaux sonores](https://github.com/open-mmlab/FoleyCrafter):FoleyCrafter: Bring Silent Videos to Life with Lifelike and Synchronized Sounds
-
+-  ⬜ : [Echange de visages dan une vidéo](https://www.youtube.com/watch?v=Iy0PaElchlg)
 4. **Point d'étape:**
 - Nous avons réussi à mettre en oeuvre une applicatoin complexe sans coder une seule ligne. Cependant ce faisant nous avons détecté des pistes pour augmenter encore notre productivité
   - **Automatiser les itérations de débuggage** , ce qui nous a fait perdre le plus de temps dans la mise au point du code
@@ -408,6 +413,7 @@ Try out our live research preview to see how STORM can help your knowledge explo
   
 <img src="https://github.com/user-attachments/assets/ae951b46-0b30-46da-b940-44b34f5af0fe" width="50%">
 
+- ⬜ : [Upscaling image et vidéo en local](https://chatgpt.com/share/37cb1a6e-6019-4b95-8e9e-50cdc169d864)
    
 - Les traitements possibles sont nombreux, c'est pourquoi un logiciel tout en un, accessible par API via Docker est interessant. Nous avons déjà installé Compfyui sur docker. Reste à intérer le bon module:
 - Trouver [controlnet-union-sdxl-1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0) sur HuggingFace
@@ -433,6 +439,7 @@ Try out our live research preview to see how STORM can help your knowledge explo
 - ⚙️ : [On choisi le portrait, les vêtements et un prompt pour la pose](https://arxiv.org/html/2406.09162v1
 - ⬜ [**FaceChain**](https://facechain-fact.github.io/) produit des visages consistant à partir d'une seule image
 - <img src="https://github.com/user-attachments/assets/891dbdd2-8e7a-449f-bd86-83cf4ad8e866" width=50%>
+- ⬜ [**Cours gratuit sur les RAG](https://github.com/Vasanthengineer4949/NLP-Projects-NHV/tree/main/Advanced%20RAG%20A-Z%20Course) et [ici](https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/cookbooks/GraphRAG_v1.ipynb) pour GraphRAG
 
   
 15. ⚙️ [**Apprendre de façon active avec sonnet**](https://www.youtube.com/watch?v=Wf9hRb6pBXA)
@@ -441,6 +448,7 @@ Try out our live research preview to see how STORM can help your knowledge explo
 - ⬜  : [**Tutorial pour interagir avec les data en python**](https://github.com/projectwilsen/KnowledgeGraphLLM/tree/main/tutorial). [Video YouTube](https://youtu.be/ky8LQE-82xs?si=fBtFkNnRC5BsJHaj)
 - ⬜  : [**GraphRAG**](https://youtu.be/6Yu6JpLMWVo?si=i2pk2P7yP60Q0-LM)
 - ⬜  : [**GraphRAG en local avec Groq, recherches  locale et globale**](https://youtu.be/xkDGpR5g9D0?si=fNW3yN-VV9K0-BZF)
+- ⬜ : [Agentic RAG dans colab](https://colab.research.google.com/drive/1-cTexfgPITZ6jkSLHsP7uObdfE1rfDxu?usp=sharing]  avec [une vidéo explicative](https://www.youtube.com/watch?v=QQAkXHRJcZg&t=1s)
 -  ✅ : comparaison d'e l'analyse d'un document par [**sonnet**](https://claude.ai/chat/ad5d814e-8723-4d9d-b85e-f1da95ce1150) , [**perplexity**](https://www.perplexity.ai/search/dis-moi-ce-que-tu-penses-du-do-rOeCbqOfTqu90EG_HRlomQ) et [**NotebookLM**](https://notebooklm.google.com/notebook/96ec78de-aa3a-446f-9800-257520648ad9?_gl=1*1igqfq9*_ga*MTQzNTk3OTMyOS4xNzIxMTEyNTAx*_ga_W0LDH41ZCB*MTcyMTExMjUwMC4xLjAuMTcyMTExMjUwMC42MC4wLjA.&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1)
 -  [**NotebookLM**](https://notebooklm.google/) est particulièrement intéresssant pour absorber une masse considérable de documents et y répondre suivant divers critères 
     - 🌟 **Intérêt de NotebookLM :**
@@ -482,6 +490,7 @@ Try out our live research preview to see how STORM can help your knowledge explo
   - ⬜  : [alltalk_tts](https://github.com/erew123/alltalk_tts)
   - 🛠️ : [ttsopenai](https://ttsopenai.com/) : l'équivalent gratuit d'elevenlabs
   - 🛠️ : [suno](suno.ai) : Création de chanson à partir d'un texte
+  - ⬜ :[CosyVoice](https://chatgpt.com/share/881feabd-9e38-4eea-8776-6e3bcafe7359) text to speech local facilement implantable en local (débutant)
 20. ⬜ : A évaluer [Invideo](https://invideo.io/i/samsonvowles), [Replicate](https://replicate.com/), [Live-portrait](https://replicate.com/fofr/ve-portrait), [Toon crafter]https://replicate.com/fofr/tooncrafter), [Oldify](https://replicate.com/arielreplicate/oldify), [Pixverse](https://app.pixverse.ai/),[Pika](https://pika.art/), [Filmora](https://filmora.wondershare.net), [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main)
 21. **Agent**:
 - ⬜  : [Tutorial : build agent with Docker](https://youtu.be/AhPXGKG4RZ4?si=rjCHN_tNT9UFbP8w)
@@ -513,6 +522,7 @@ Try out our live research preview to see how STORM can help your knowledge explo
 - Ma conclusion est que l'activation d'agents est possible, mais très lente et relativement coûteuse. Nous avons probablement aussi exagéré sur le nombre d'agents à mettre en oeuvre. Il faut mieux que le traitement de la requ^te initiale soit priseen compte par un seul LLM  qui , avec le bon prompt peut produire le graphe ainsi que l'artefact qui permet sa visualisation. Le LLM maîtrise la cohérence d'ensemble et peut donc facilement adapter le résultat à des adaptations souhaitée par l'utilisateur. 
         
 23. **Text to Graph**:
+- ⬜ :  [Story teller avec bifurcation dans l'histoire possible](https://github.com/langchain-ai/story-writing)
 - ⬜ :  [Un tutoriel pour chatter avec un  Knowledge Graph using LLMs](https://www.youtube.com/watch?v=KMXQ4SVLwmo)
 - ⬜ :  [GraphFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) : RAGFlow propose une extraction de connaissances à partir de données non structurées et complexes, prend en charge le chunking intelligent, offre des citations ancrées avec une visualisation des références, et supporte divers formats de données, y compris les graphiques. Il facilite un flux de travail RAG automatisé et configurable, adapté à toutes les entreprises, avec des API intuitives pour une intégration facile.
 - Des logiciels comme Grasshopper et Flowise basent la résolution de problèmes complexes en les décomposants et en les interconnectant sous la forme d'un graphe agençant les briques représentatives des sous-problèmes à traiter. Cela demande certains efforts à l'utilisateur qui doit se souvenir des briques possibles, il doit aussi les interconnecter manuellement. Enfin le résultat final est souvent difficilement lisible. On peut certes créer des macro-briques pour faciliter la lisibilité au détriment de nouvelles interventions manuelles.
@@ -572,7 +582,8 @@ Le résultat est tout à fait correct :
 
 27. ⬜  : [**Voice assistant multimodal**](https://youtu.be/pi6gr_YHSuc?si=fffk2BoXy-qdY-Im)  avec ChatGPT-4o, Groq, Llama3, OpenAI-TTS & Faster-Whisper
 -  ⬜  : [MOSHY](https://www.youtube.com/watch?v=AuXNiQvoe6g)
--  ⬜  : [Accessible via un code python](https://www.youtube.com/watch?v=w5unVTO7mLQ)         
+-  ⬜  : [Accessible via un code python](https://www.youtube.com/watch?v=w5unVTO7mLQ)
+-  ⬜  : [Allice](https://github.com/myshell-ai/AIlice) :  AIlice est une assistante intelligente, versatile et évolutive. Voilà une [synthèse](https://chatgpt.com/share/dd1851ef-4020-4ffe-842b-249d630c8ac9) de ses capacités
 29. ⬜  : [**Avatar parlant ou chantant gratuit**](https://github.com/fudan-generative-vision/hallo?tab=readme-ov-file) : Bluffant ! 
    - ⬜  : [**Avatar parlant avec CompfyUI**](https://www.youtube.com/watch?v=IOCA6ncJC6k) : Un classique, mais la mode passe vite dans l'IA. Sans installation locale on peut aussi [le mettre en oeuvre directement dans Kaggle](https://www.youtube.com/watch?v=pvGhSfsi1Ys) 
 30.  ⬜  : [**Transcription audio de réunion en local**](https://github.com/JuergenFleiss/aTrain) : multilangue et identifie les participants, open source
@@ -611,3 +622,9 @@ Le résultat est tout à fait correct :
     • 🛠️ Créer vos propres prompts personnalisés pour des besoins spécifiques
     • 🗣️ Interagir par commandes vocales ou interface en ligne de commande
     • 🔗 S'intégrer avec d'autres outils comme Obsidian pour la prise de notes
+- [vectorShift](https://vectorshift.ai/) : Un écosystème pour concevoir, déployer et gérer des applications d'IA en no code
+
+33. **Comment améliorer les performances d'un LLM**:
+    
+![image](https://github.com/user-attachments/assets/0e698b2d-b1cc-4e3b-bbc3-769a45dbec41)
+
