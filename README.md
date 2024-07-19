@@ -628,10 +628,22 @@ Le résultat est tout à fait correct :
     
 ![image](https://github.com/user-attachments/assets/0e698b2d-b1cc-4e3b-bbc3-769a45dbec41)
 
+# Espace de travail création de vidéo 
+[sonnet](https://claude.ai/chat/c33dece9-e5ab-4206-98c6-de644cb1d731)
 
 # Espace de travail pour Text2CAD 
--Le code à base deFreeCAD avait été généré suite à une discussion avec [sonnet](https://claude.ai/chat/c33dece9-e5ab-4206-98c6-de644cb1d731)
+-Le code à base deFreeCAD avait été généré suite à une discussion avec sonnet [programme python capable de générer des formes complexes](https://claude.ai/chat/91026ba9-f74b-4622-b215-3148ada38543)
 - Environnement conda text2cad
 - Nous avons demandé à [Perplexity](https://www.perplexity.ai/search/je-voudrais-creer-des-objets-3-Z0cEzC3CR_CbEfVud40EpQ)  quel framework utiliser --> CadQuery
 - complété par des exemples à la demande de [Sonnet](https://claude.ai/chat/1f1c32f4-ba5f-424d-bbb7-9eb3c03849d6)
 - Il y une confusion entre FreeCAD et cadQuery
+- On repart sur des bases saines en demandant à  sonnet de devenir expert en quadQuery à partir des données récupérés par perplexity :https://claude.ai/chat/94c3c582-f614-4987-9c9c-09e6e0c5a4dc
+- nous avons également demandé à sonner le pseudocode pour notre modèle :https://claude.ai/chat/8090027b-67c6-4f94-821b-59d5e30cb4cf
+- Nous avonsensuite demandé à sonnet "expert" de le traduire en cadquery 
+- Nous avons desistallé cadquery avec pip uninstall et réinstallé avec conda (suivant le guide cadquery) / il faut installer mamba
+Il de  démarre qu'à partir d'un terminal spécial :https://www.perplexity.ai/search/j-ai-installe-mamba-sur-wjindo-LDoLbw9GQB2EIvNC_Zublw
+- On désinstalle text2cad de conda conda deactivate
+(base) PS C:\Users\test\Documents\AI_Automation\Text2CAD> conda env remove -n text2cad
+on le reinstalle via mamba puis
+# Or install the dev version to get the latest changes
+mamba install -c conda-forge -c cadquery cadquery=master
