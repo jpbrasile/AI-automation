@@ -652,5 +652,6 @@ Le résultat est tout à fait correct :
 - Visualiser le résultat en temps réel (demander à Sonnet 3.5 une visualistion du résultat en HTML, possible grace à Artefacts
 - Itérer en complexifiant étape par étape
 - Ensuite utiliser cadQuery:
-  - demander de porter le html en python [résultat](https://github.com/jpbrasile/SimpleAIRoadMap-/blob/main/video-ready-toroidal-winding-visualization.html)
+  - demander de porter le html en python [résultat]()
+<iframe src="https://github.com/jpbrasile/SimpleAIRoadMap-/blob/main/video-ready-toroidal-winding-visualization.html" width="100%" height="500px"></iframe>
   - demander de tester toutes les fonctions correspondante sur un toy  exemple  
