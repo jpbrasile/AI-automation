@@ -653,4 +653,5 @@ Le résultat est tout à fait correct :
 - Itérer en complexifiant étape par étape
 - Ensuite utiliser cadQuery:
   - demander de porter le html en python [résultat](<iframe src="https://github.com/jpbrasile/SimpleAIRoadMap-/blob/main/video-ready-toroidal-winding-visualization.html" width="100%" height="500px"></iframe>)
+    <iframe src="https://github.com/jpbrasile/SimpleAIRoadMap-/blob/main/video-ready-toroidal-winding-visualization.html" width="100%" height="500px"</iframe>)
   - demander de tester toutes les fonctions correspondante sur un toy  exemple  
