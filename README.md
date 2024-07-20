@@ -641,9 +641,16 @@ Le résultat est tout à fait correct :
 - nous avons également demandé à sonner le pseudocode pour notre modèle :https://claude.ai/chat/8090027b-67c6-4f94-821b-59d5e30cb4cf
 - Nous avonsensuite demandé à sonnet "expert" de le traduire en cadquery 
 - Nous avons desistallé cadquery avec pip uninstall et réinstallé avec conda (suivant le guide cadquery) / il faut installer mamba
-Il de  démarre qu'à partir d'un terminal spécial :https://www.perplexity.ai/search/j-ai-installe-mamba-sur-wjindo-LDoLbw9GQB2EIvNC_Zublw
-- On désinstalle text2cad de conda conda deactivate
-(base) PS C:\Users\test\Documents\AI_Automation\Text2CAD> conda env remove -n text2cad
-on le reinstalle via mamba puis
-# Or install the dev version to get the latest changes
-mamba install -c conda-forge -c cadquery cadquery=master
+- Il ne  démarre qu'à partir d'un terminal spécial :https://www.perplexity.ai/search/j-ai-installe-mamba-sur-wjindo-LDoLbw9GQB2EIvNC_Zublw
+  - On désinstalle text2cad de conda `conda deactivate`
+  (base) PS C:\Users\test\Documents\AI_Automation\Text2CAD> conda env remove -n text2cad
+  - on le reinstalle via mamba puis  (or install the dev version to get the latest changes)
+  `mamba install -c conda-forge -c cadquery cadquery=master`
+### Expérience acquise:
+- Avancer pas à pas, du simple au compliqué
+- Donner des entrées type image+texte et vérifier que l'IA a bien interprété le besoin
+- Visualiser le résultat en temps réel (demander à Sonnet 3.5 une visualistion du résultat en HTML, possible grace à Artefacts
+- Itérer en complexifiant étape par étape
+- Ensuite utiliser cadQuery:
+  - demander de porter le html en python [résultat](https://github.com/jpbrasile/SimpleAIRoadMap-/blob/main/video-ready-toroidal-winding-visualization.html)
+  - demander de tester toutes les fonctions correspondante sur un toy  exemple  
