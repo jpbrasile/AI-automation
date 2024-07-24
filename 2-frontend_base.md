@@ -1,3 +1,5 @@
+file:///C:/Users/test/Documents/AI_Automation/LearnAnythingV2/2_frontend_base/astronomy-course-complete-reactive.html  fonctionne correctement
+
 **Eléments clés:**
 ```
 Objectif: Interface utilisateur de base
