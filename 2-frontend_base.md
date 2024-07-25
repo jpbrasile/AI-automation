@@ -1,5 +1,5 @@
 file:///C:/Users/test/Documents/AI_Automation/LearnAnythingV2/2_frontend_base/astronomy-course-complete-reactive.html  fonctionne correctement
-
+https://claude.ai/chat/87189edd-cc61-4fb1-a57c-3c4d89de348f
 **Eléments clés:**
 ```
 Objectif: Interface utilisateur de base
